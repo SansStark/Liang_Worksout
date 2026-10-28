@@ -105,4 +105,14 @@ GitHub Actions 工作流已准备为每 6 小时运行一次（北京时间 02:1
 
 每次导出活动时自动补齐 `province`：优先保留已有地点文字中的省份，否则使用活动起点 GPS 与项目内的省界数据离线匹配，不调用 Strava 或第三方地理接口。省份图、个人概览和按省份筛选共用该字段。无 GPS 且无有效地点的记录不猜测省份；跨省活动按起点统计。省份总数不包含无名称的海上辅助边界。
 
-push 当前只更新 GitHub；Vercel 的 GitHub 自动部署关联尚未完成，需要另行关联或部署。地图沿用项目的 Mapbox 公共令牌，可在 `src/utils/const.ts` 换成自己的令牌。原项目和 Dashboard 的 MIT 许可保持保留。
+## 个人最佳成绩持续补齐
+
+个人最佳需要读取每次活动的详情；仅导入活动概要不会带回 Strava 官方 `best_efforts`。新的 `strava_efforts_backfill.yml` 每 15 分钟检查一次，使用配额响应头控制每批最多 90 次请求，并保留其他同步所需的额度；当天额度不足时等待 UTC 次日零点恢复。记录逐条保存，网络波动会重试，失败不会抹掉缓存。
+
+跑步优先覆盖各个标准距离，再补其他记录；展示的成绩始终取自 Strava 官方分段，不用活动均速推算成绩。跑步补完后继续核实骑行实测功率。`best_efforts=[]` 表示已经读取但没有官方分段，仍未能读取的记录不会伪装成已完成。
+
+仓库变量 `ENABLE_STRAVA_EFFORTS_BACKFILL=true` 开启补齐任务；进度、待处理数量和下次重试时间在 `.strava-sync/efforts-progress.json`。每批有数据变化就自动 push，并使用 GitHub Secret `VERCEL_DEPLOY_HOOK` 触发线上更新。正常每 6 小时的活动同步与成绩补齐共用并发锁，成绩补齐期间避免重复消耗详情额度。
+
+本地也可运行 `.\.venv\Scripts\python.exe run_page\strava_efforts_backfill.py --max-requests 90`，但不要与云端补齐同时写入同一分支；先暂停对应仓库变量、pull 最新数据再运行。
+
+Vercel 已关联 GitHub；成绩补齐还配置了部署钩子，确保机器人 push 后发布。地图沿用项目的 Mapbox 公共令牌，可在 `src/utils/const.ts` 换成自己的令牌。原项目和 Dashboard 的 MIT 许可保持保留。

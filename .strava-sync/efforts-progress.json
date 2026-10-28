@@ -1,0 +1,12 @@
+{
+  "cycling_pending": 131,
+  "deferred": {},
+  "finished": false,
+  "next_retry_at": "2026-10-28T07:45:15+00:00",
+  "requests": 85,
+  "running_pending": 1272,
+  "stopped": "API reserve reached; resume in a later batch",
+  "updated_at": "2026-10-28T07:31:12.694228+00:00",
+  "updated_in_batch": 84,
+  "version": 1
+}

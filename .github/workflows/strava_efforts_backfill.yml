@@ -1,0 +1,140 @@
+name: Backfill Strava personal records
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: Maximum Strava requests in this batch
+        type: number
+        default: 90
+  schedule:
+    - cron: '1,16,31,46 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: strava-sync-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    if: vars.ENABLE_STRAVA_EFFORTS_BACKFILL == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Check pending records and retry window
+        id: due
+        env:
+          MANUAL: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          rows = json.loads(Path('src/static/activities.json').read_text())
+          normalize = lambda s: s.replace(' ', '').replace('_', '').replace('-', '').lower()
+          runs = {'run', 'running', 'trailrun', 'virtualrun'}
+          rides = {'ride', 'virtualride', 'mountainbikeride', 'gravelride', 'ebikeride', 'emountainbikeride', 'handcycle', 'velomobile'}
+          pending = any(a.get('source') == 'strava' and (
+              (normalize(a['type']) in runs and a.get('distance', 0) >= 400 and (a.get('best_efforts') is None or a.get('best_efforts_version') != 2)) or
+              (normalize(a['type']) in rides and a.get('power_efforts') is None)
+          ) for a in rows)
+          path = Path('.strava-sync/efforts-progress.json')
+          state = json.loads(path.read_text()) if path.exists() else {}
+          retry = state.get('next_retry_at')
+          due = pending and (os.getenv('MANUAL') == 'true' or not retry or datetime.now(timezone.utc) >= datetime.fromisoformat(retry))
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+              out.write(f"run={str(due).lower()}\n")
+          print('Pending records:', pending, 'Batch due:', due, 'Next retry:', retry)
+          PY
+
+      - name: Set up Python
+        if: steps.due.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install sync dependencies
+        if: steps.due.outputs.run == 'true'
+        run: python -m pip install -r requirements.txt
+
+      - name: Fetch official running and cycling records
+        id: sync
+        if: steps.due.outputs.run == 'true'
+        continue-on-error: true
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_CLIENT_REFRESH_TOKEN: ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}
+          STRAVA_ATHLETE_ID: ${{ secrets.STRAVA_ATHLETE_ID }}
+          MAX_REQUESTS: ${{ github.event.inputs.max_requests || '90' }}
+          PYTHONUNBUFFERED: '1'
+        run: python run_page/strava_efforts_backfill.py --max-requests "$MAX_REQUESTS"
+
+      - name: Commit and push completed records
+        id: push
+        if: always() && steps.due.outputs.run == 'true' && steps.sync.outcome != 'skipped'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- src/static/activities.json .strava-sync/state.json
+          if [ -f .strava-sync/efforts-progress.json ]; then
+            git add -- .strava-sync/efforts-progress.json
+          fi
+          if git diff --cached --quiet -- src/static/activities.json; then
+            echo "data_changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "data_changed=true" >> "$GITHUB_OUTPUT"
+          fi
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Backfill Strava personal records [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Publish updated personal records to Vercel
+        if: steps.push.outputs.data_changed == 'true'
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          python - <<'PY'
+          import os, requests
+          hook = os.environ.get('VERCEL_DEPLOY_HOOK', '').strip()
+          if not hook:
+              raise SystemExit('Missing Vercel deployment hook.')
+          try:
+              response = requests.post(hook, timeout=40)
+          except requests.RequestException:
+              raise SystemExit('Could not contact Vercel deployment hook.') from None
+          if response.status_code >= 400:
+              raise SystemExit(f'Deployment request failed: HTTP {response.status_code}')
+          print('Vercel production deployment requested.')
+          PY
+
+      - name: Write progress summary
+        if: always() && steps.due.outputs.run == 'true'
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('.strava-sync/efforts-progress.json')
+          if path.exists():
+              state = json.loads(path.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as out:
+                  for key in ('updated_in_batch', 'running_pending', 'cycling_pending', 'next_retry_at', 'stopped'):
+                      out.write(f"- {key}: {state.get(key)}\n")
+          PY
+
+      - name: Report failed batch
+        if: always() && steps.sync.outcome == 'failure'
+        run: exit 1

@@ -4,9 +4,9 @@
   "history_before": "2021-03-14T00:06:13+00:00",
   "history_complete": true,
   "refresh_token": {
-    "ciphertext": "ri5JW0YmFJd/X+TqOD2pDGwjvGm21kDdpuuoCLqgaQTHDI9uG62+iw==",
-    "nonce": "v0Tw5QftrGlxDqxpiAT+vg==",
-    "tag": "Q1GWtrAzhJx9mRWERBTVoQ=="
+    "ciphertext": "XP6+znuMRD20FS2O4X1Rf08PW9xEFOEiL/wDILLgkkQVglOfNjBdrg==",
+    "nonce": "jlZF6E+ySfieL+NHJHJaJQ==",
+    "tag": "IqFfiFI+7YSMQ1ZyYQ1w2Q=="
   },
   "version": 1
 }

@@ -49,8 +49,14 @@ jobs:
           STRAVA_CLIENT_REFRESH_TOKEN: ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}
           STRAVA_ATHLETE_ID: ${{ secrets.STRAVA_ATHLETE_ID }}
           HISTORY_LIMIT: ${{ github.event.inputs.history_limit || '50' }}
+          EFFORTS_WORKER_ENABLED: ${{ vars.ENABLE_STRAVA_EFFORTS_BACKFILL }}
           PYTHONUNBUFFERED: '1'
-        run: python run_page/strava_auto_sync.py --history-limit "$HISTORY_LIMIT" --detail-limit 5 --weather-limit 5
+        run: |
+          DETAIL_LIMIT=5
+          if [ "$EFFORTS_WORKER_ENABLED" = 'true' ]; then
+            DETAIL_LIMIT=$(python -c "import json; from pathlib import Path; p=Path('.strava-sync/efforts-progress.json'); print(5 if p.exists() and json.loads(p.read_text()).get('finished') else 0)")
+          fi
+          python run_page/strava_auto_sync.py --history-limit "$HISTORY_LIMIT" --detail-limit "$DETAIL_LIMIT" --weather-limit 5
 
       - name: Commit and push saved progress
         if: always() && steps.sync.outcome != 'skipped' && steps.checkout.outcome == 'success'
