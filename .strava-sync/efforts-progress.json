@@ -3,10 +3,10 @@
   "deferred": {},
   "finished": false,
   "next_retry_at": "2026-10-28T07:45:15+00:00",
-  "requests": 85,
-  "running_pending": 1272,
+  "requests": 32,
+  "running_pending": 1241,
   "stopped": "API reserve reached; resume in a later batch",
-  "updated_at": "2026-10-28T07:31:12.694228+00:00",
-  "updated_in_batch": 84,
+  "updated_at": "2026-10-28T07:38:42.631480+00:00",
+  "updated_in_batch": 31,
   "version": 1
 }
