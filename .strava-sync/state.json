@@ -2,7 +2,7 @@
   "athlete_id": "74251495",
   "client_id": "291636",
   "history_before": "2021-03-14T00:06:13+00:00",
-  "history_complete": false,
+  "history_complete": true,
   "refresh_token": {
     "ciphertext": "ri5JW0YmFJd/X+TqOD2pDGwjvGm21kDdpuuoCLqgaQTHDI9uG62+iw==",
     "nonce": "v0Tw5QftrGlxDqxpiAT+vg==",
