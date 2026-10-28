@@ -6,7 +6,7 @@ import arrow
 import stravalib
 from config import MAPPING_TYPE, run_map
 from gpxtrackposter import track_loader
-from sqlalchemy import func
+from sqlalchemy import func, or_
 
 from polyline_processor import filter_out
 from strava_streams import (
@@ -105,7 +105,16 @@ class Generator:
         persist_refresh_token(self.client_id, self.refresh_token)
         print("Access ok")
 
-    def sync(self, force, after=None, recent_days=None, before=None):
+    def sync(
+        self,
+        force,
+        after=None,
+        recent_days=None,
+        before=None,
+        limit=None,
+        enhance_routes=True,
+        geocode=True,
+    ):
         """
         Sync activities means sync from strava
         TODO, better name later
@@ -157,6 +166,9 @@ class Generator:
                 self.session.add(pending_sync)
                 self.session.commit()
 
+        if limit is not None:
+            filters["limit"] = limit
+        processed_count = 0
         renamed_count = 0
         for activity in newest_activities_first(self.client.get_activities(**filters)):
             strava_activity_type = (
@@ -172,13 +184,18 @@ class Generator:
             existing_polyline = (
                 existing_activity.summary_polyline if existing_activity else ""
             )
+            if not enhance_routes:
+                _set_activity_polyline(
+                    activity,
+                    prefer_denser_polyline(existing_polyline, incoming_polyline),
+                )
             reused_existing_polyline = False
             needs_stream = activity.distance and should_use_streams(
                 activity.distance,
                 activity_type=activity_type,
                 summary_polyline=incoming_polyline,
             )
-            if needs_stream:
+            if needs_stream and enhance_routes:
                 if not force and route_has_sufficient_density(
                     activity.distance, existing_polyline, activity_type
                 ):
@@ -236,9 +253,12 @@ class Generator:
             activity.elevation_gain = activity.total_elevation_gain
             activity.subtype = strava_activity_type
             activity.type = activity_type
-            created, renamed = update_or_create_activity(self.session, activity)
+            created, renamed = update_or_create_activity(
+                self.session, activity, reverse_geocode=geocode
+            )
             # Keep newest-first progress if a later API request reaches its limit.
             self.session.commit()
+            processed_count += 1
             if created:
                 sys.stdout.write("+")
             else:
@@ -251,6 +271,7 @@ class Generator:
         self.session.commit()
         if renamed_count:
             print(f"\nAligned {renamed_count} activity title(s) from Strava.")
+        return processed_count
 
     def sync_from_data_dir(self, data_dir, file_suffix="gpx", activity_title_dict={}):
         loader = track_loader.TrackLoader()
@@ -341,7 +362,7 @@ class Generator:
     def loadForMapping(self):
         activities = (
             self.session.query(Activity)
-            .filter(Activity.type.in_(MAPPING_TYPE))
+            .filter(or_(Activity.type.in_(MAPPING_TYPE), Activity.source == "strava"))
             .order_by(Activity.start_date_local)
         )
         activity_list = []

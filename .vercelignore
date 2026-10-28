@@ -8,3 +8,4 @@ requirements-dev.txt
 .git/
 run_page/
 tests/
+.strava-sync/

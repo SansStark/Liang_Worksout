@@ -30,6 +30,7 @@ route.svg
 .env.*
 !.env.example
 .local-backup/
+/.strava-sync/*.tmp
 /run_page/data.db
 /run_page/data.db-*
 

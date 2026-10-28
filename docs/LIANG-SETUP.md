@@ -87,4 +87,18 @@ pnpm build
 
 Vercel 使用仓库中的 `vercel.json` 配置，以 Vite 构建，发布 `dist/`，支持主页和 `/summary` 等页面直接访问。部署不需要 Strava 密钥；它们只用于本地同步或 GitHub Actions。`.vercelignore` 排除了本地凭据、数据库和备份。
 
-上游自动定时同步已关闭，GitHub Actions 同步还需单独配置并启用。地图沿用项目的 Mapbox 公共令牌，可在 `src/utils/const.ts` 换成自己的令牌。原项目和 Dashboard 的 MIT 许可保持保留。
+## 连续补历史与周期 push
+
+```powershell
+cd D:\sport_data
+$env:GIT_EXECUTABLE = 'C:\Program Files\Git\cmd\git.exe'
+.\.venv\Scripts\python.exe run_page\strava_backfill_local.py --batch-size 100
+```
+
+本地先检查新活动，再按从新到旧的顺序连续补历史。每批最多 100 条，保存后 commit 并 push；收到 Strava HTTP 429 后停止，不会绕过限流。全部历史抓完也会停止。再次运行时从断点续传。批量补历史优先保存活动与 GPS 概览，地点细分、详细流和天气留待后续补齐；已缓存的精细轨迹不会降级。
+
+进度保存在 `.strava-sync/state.json`。其中轮换后的 refresh token 使用 AES-GCM 加密，仅持有 `STRAVA_CLIENT_SECRET` 才能解密，没有明文凭据；该目录不会上传到 Vercel。实际活动仍保存在 `src/static/activities.json`，云端会据此重建数据库，避免依赖本地 SQLite。
+
+GitHub Actions 工作流已准备为每 6 小时运行一次（北京时间 02:17、08:17、14:17、20:17，实际启动可能排队）。只有仓库变量 `ENABLE_STRAVA_SYNC=true` 时才运行。本地连续抓取期间保持它关闭，避免两边同时 push；以后可单独开启，云端每次补 50 条历史并保存进度。GitHub Secrets 需要 Client ID、Client Secret、初始 Refresh Token 和 Athlete ID。
+
+push 当前只更新 GitHub；Vercel 的 GitHub 自动部署关联尚未完成，需要另行关联或部署。地图沿用项目的 Mapbox 公共令牌，可在 `src/utils/const.ts` 换成自己的令牌。原项目和 Dashboard 的 MIT 许可保持保留。
