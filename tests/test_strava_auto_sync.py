@@ -75,6 +75,11 @@ class AutoSyncTest(unittest.TestCase):
                 self.assertEqual(saved.temperature_min, 0)
                 self.assertEqual(saved.best_efforts[0]["elapsed_time"], 1400)
                 self.assertEqual(saved.summary_polyline, "existing-route")
+                exported = json.loads(source.read_text(encoding="utf-8"))
+                exported[0]["temperature_min"] = 12
+                source.write_text(json.dumps(exported), encoding="utf-8")
+                restore_export(generator.session, source)
+                self.assertEqual(generator.session.get(Activity, 1).temperature_min, 12)
             finally:
                 generator.session.close()
                 generator.session.get_bind().dispose()

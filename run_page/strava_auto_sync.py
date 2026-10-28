@@ -90,14 +90,18 @@ def restore_export(session, json_path=JSON_FILE):
     columns = set(Activity.__table__.columns.keys())
     restored = 0
     for item in rows:
-        if session.get(Activity, int(item["run_id"])) is not None:
-            continue
+        existing = session.get(Activity, int(item["run_id"]))
         values = {key: value for key, value in item.items() if key in columns}
         for key in ("moving_time", "elapsed_time"):
             if key in values:
                 values[key] = duration(values[key])
-        session.add(Activity(**values))
-        restored += 1
+        if existing is None:
+            session.add(Activity(**values))
+            restored += 1
+        else:
+            # A preceding cloud push may have enriched rows in the local DB already.
+            for key, value in values.items():
+                setattr(existing, key, value)
     session.commit()
     return restored
 
