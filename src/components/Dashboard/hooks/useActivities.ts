@@ -1,6 +1,15 @@
 import { useMemo } from 'react';
 import type { Activity, SportFilter } from '../types';
 
+export function activityProvince(
+  activity: Pick<Activity, 'province' | 'location_country'>
+): string | null {
+  return (
+    extractProvince(activity.province) ||
+    extractProvince(activity.location_country)
+  );
+}
+
 // Canonical province extraction — handles all 3 location_country formats,
 // only returns Chinese provinces (filters out foreign locations).
 export function extractProvince(loc: string | null | undefined): string | null {

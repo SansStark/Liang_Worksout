@@ -3,6 +3,7 @@ import random
 import string
 
 from config import TYPE_DICT
+from province_locations import activity_province
 from geopy.geocoders import options, Nominatim
 from sqlalchemy import (
     Boolean,
@@ -139,6 +140,10 @@ class Activity(Base):
 
         if self.streak:
             out["streak"] = self.streak
+
+        province = activity_province(self.location_country, self.summary_polyline)
+        if province:
+            out["province"] = province
 
         return out
 

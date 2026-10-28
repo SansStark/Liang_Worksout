@@ -4,7 +4,7 @@ import { useLocale } from '../hooks/useLocale';
 import {
   formatDistance,
   parseMovingTime,
-  extractProvince,
+  activityProvince,
 } from '../hooks/useActivities';
 import { AVATAR } from '../config';
 import { locationForRun } from '@/utils/utils';
@@ -41,12 +41,10 @@ export const ProfileCard = memo(function ProfileCard({
   const countries = new Set<string>();
   const provinces = new Set<string>();
   for (const a of activities) {
-    const loc = a.location_country;
-    if (!loc || loc === 'None') continue;
     const country = locationForRun(a).country;
     if (country) countries.add(country);
     // Province — use shared logic (China-only)
-    const p = extractProvince(loc);
+    const p = activityProvince(a);
     if (p) provinces.add(p);
   }
 

@@ -15,7 +15,7 @@ import {
   LocaleProvider,
   useLocale,
 } from '@/components/Dashboard/hooks/useLocale';
-import { extractProvince } from '@/components/Dashboard/hooks/useActivities';
+import { activityProvince } from '@/components/Dashboard/hooks/useActivities';
 import { StatsCards } from '@/components/Dashboard/components/StatsCards';
 import { ContributionHeatmap } from '@/components/Dashboard/components/ContributionHeatmap';
 import { ActivityLog } from '@/components/Dashboard/components/ActivityLog';
@@ -104,9 +104,7 @@ const DashboardContent = () => {
   const provinceFiltered = useMemo(
     () =>
       province
-        ? filtered.filter(
-            (a) => extractProvince(a.location_country) === province
-          )
+        ? filtered.filter((a) => activityProvince(a) === province)
         : filtered,
     [filtered, province]
   );

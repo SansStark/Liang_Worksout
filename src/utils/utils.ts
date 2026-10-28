@@ -54,6 +54,7 @@ export interface Activity {
   start_date: string;
   start_date_local: string;
   location_country?: string | null;
+  province?: string | null;
   summary_polyline?: string | null;
   average_heartrate?: number | null;
   elevation_gain: number | null;
@@ -323,6 +324,10 @@ const locationForRun = (
     }
   }
 
+  if (run.province) {
+    province = run.province;
+    if (!country) country = '中国';
+  }
   const r = { country, province, city, coordinate };
   locationCache.set(run.run_id, r);
   return r;

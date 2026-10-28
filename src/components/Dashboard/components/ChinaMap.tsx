@@ -1,7 +1,7 @@
 import { memo, useEffect, useMemo, useState } from 'react';
 import type { Activity, SportFilter } from '../types';
 import { useLocale } from '../hooks/useLocale';
-import { extractProvince } from '../hooks/useActivities';
+import { activityProvince } from '../hooks/useActivities';
 
 interface ChinaMapProps {
   activities: Activity[];
@@ -12,7 +12,7 @@ interface ChinaMapProps {
 
 type GeoFeature = {
   type: 'Feature';
-  properties: { name: string; adcode: number };
+  properties: { name: string; adcode: number | string };
   geometry: {
     type: 'Polygon' | 'MultiPolygon';
     coordinates: number[][][][];
@@ -90,7 +90,7 @@ export const ChinaMap = memo(function ChinaMap({
   const provinceCount = useMemo(() => {
     const map = new Map<string, number>();
     for (const a of activities) {
-      const p = extractProvince(a.location_country);
+      const p = activityProvince(a);
       if (p) map.set(p, (map.get(p) ?? 0) + 1);
     }
     return map;
@@ -147,7 +147,9 @@ export const ChinaMap = memo(function ChinaMap({
                 {visitedCount}
               </span>
               <span>
-                / {features.length || 35}{' '}
+                /{' '}
+                {features.filter((feature) => feature.properties.name).length ||
+                  34}{' '}
                 {locale === 'zh' ? '省份' : 'provinces'}
               </span>
             </>
@@ -228,6 +230,10 @@ export const ChinaMap = memo(function ChinaMap({
 
       {/* Tooltip */}
       <div className="mt-1.5 h-4 text-xs text-[var(--color-muted)]">
+        {!displayProvince &&
+          (locale === 'zh'
+            ? '按活动起点统计'
+            : 'Based on activity start locations')}
         {displayProvince && (
           <>
             <span className="font-medium text-[var(--color-text)]">

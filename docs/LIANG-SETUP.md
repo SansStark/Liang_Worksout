@@ -101,4 +101,8 @@ $env:GIT_EXECUTABLE = 'C:\Program Files\Git\cmd\git.exe'
 
 GitHub Actions 工作流已准备为每 6 小时运行一次（北京时间 02:17、08:17、14:17、20:17，实际启动可能排队）。只有仓库变量 `ENABLE_STRAVA_SYNC=true` 时才运行。本地连续抓取期间保持它关闭，避免两边同时 push；以后可单独开启，云端每次补 50 条历史并保存进度。GitHub Secrets 需要 Client ID、Client Secret、初始 Refresh Token 和 Athlete ID。
 
+## 省份足迹
+
+每次导出活动时自动补齐 `province`：优先保留已有地点文字中的省份，否则使用活动起点 GPS 与项目内的省界数据离线匹配，不调用 Strava 或第三方地理接口。省份图、个人概览和按省份筛选共用该字段。无 GPS 且无有效地点的记录不猜测省份；跨省活动按起点统计。省份总数不包含无名称的海上辅助边界。
+
 push 当前只更新 GitHub；Vercel 的 GitHub 自动部署关联尚未完成，需要另行关联或部署。地图沿用项目的 Mapbox 公共令牌，可在 `src/utils/const.ts` 换成自己的令牌。原项目和 Dashboard 的 MIT 许可保持保留。

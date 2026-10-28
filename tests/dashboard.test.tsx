@@ -18,6 +18,9 @@ import {
 } from '../src/components/Dashboard/components/ContributionHeatmap';
 import { SummaryPage } from '../src/components/Dashboard/components/SummaryPage';
 import { ActivityLog } from '../src/components/Dashboard/components/ActivityLog';
+import { ProfileCard } from '../src/components/Dashboard/components/ProfileCard';
+import { ChinaMap } from '../src/components/Dashboard/components/ChinaMap';
+import { activityProvince } from '../src/components/Dashboard/hooks/useActivities';
 import {
   compareActivities,
   type ActivitySortKey,
@@ -51,6 +54,41 @@ import {
 } from '../src/components/Dashboard/utils/summary';
 
 const today = new Date();
+test('GPS-derived provinces work without address text and agree with profile totals', () => {
+  const activity = {
+    run_id: 999999,
+    name: 'GPS-only run',
+    type: 'Run',
+    province: '北京市',
+    location_country: null,
+    distance: 5000,
+    moving_time: '0:30:00',
+    start_date_local: '2026-10-01 08:00:00',
+    start_date: '2026-10-01T00:00:00Z',
+    elevation_gain: 0,
+    average_speed: 3,
+    streak: 1,
+  } satisfies Activity;
+  assert.equal(activityProvince(activity), '北京市');
+  assert.equal(
+    activityProvince({ location_country: '杭州市, 浙江省, 中国' }),
+    '浙江省'
+  );
+  assert.equal(activityProvince({ location_country: null }), null);
+  const activities = [
+    activity,
+    { ...activity, run_id: 1000000, province: '浙江省' },
+  ];
+  const profile = renderToStaticMarkup(
+    <ProfileCard activities={activities} />
+  ).replace(/<[^>]*>/g, '');
+  assert.match(profile, /1\s*国\s*·\s*2\s*省/);
+  const map = renderToStaticMarkup(
+    <ChinaMap activities={activities} filter="all" />
+  ).replace(/<[^>]*>/g, '');
+  assert.match(map, /2\s*\/\s*34\s*省/);
+});
+
 test('track wall keeps individual qualifying activities and excludes short rides and transport', () => {
   const route = '_p~iF~ps|U_ulLnnqC_mqNvxq`@';
   const activities = [
