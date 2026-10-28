@@ -1,3 +1,11 @@
+# Liang page
+
+Liang's personal workouts dashboard. Only the modern dashboard is served at `/`; summary is at `/summary`. Older home URLs redirect to the dashboard.
+
+Start with [the local setup and Strava authorization guide](docs/LIANG-SETUP.md). Sync defaults to the last 90 days, then incremental updates. Upstream workout data has been archived locally and is no longer displayed.
+
+The remaining documentation below describes the upstream project's integrations.
+
 ## note1: use v2.0 need change vercel setting from Gatsby to Vite
 
 ## note2: 2023.09.26 garmin need secret_string(and in Actions) get `python run_page/garmin_sync.py ${secret_string}` if cn `python run_page/garmin_sync.py ${secret_string} --is-cn`

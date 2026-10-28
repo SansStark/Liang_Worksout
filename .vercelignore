@@ -1,2 +1,10 @@
 requirements.txt  
 requirements-dev.txt  
+.env
+.env.*
+.cache/
+.venv/
+.local-backup/
+.git/
+run_page/
+tests/

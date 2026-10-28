@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
 import { useTheme, Theme } from '@/hooks/useTheme';
-import HomeViewSwitch from '@/components/HomeViewSwitch';
 import styles from './style.module.css';
 
 const Header = () => {
@@ -79,7 +78,6 @@ const Header = () => {
               {n.name}
             </a>
           ))}
-          <HomeViewSwitch />
           <div className="ml-3 flex items-center space-x-2">
             <button
               type="button"

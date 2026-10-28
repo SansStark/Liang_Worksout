@@ -7,7 +7,6 @@ import {
   useLocation,
 } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import Index from './pages';
 import NotFound from './pages/404';
 import ReactGA from 'react-ga4';
 import {
@@ -16,27 +15,30 @@ import {
 } from './utils/const';
 import '@/styles/index.css';
 import { withOptionalGAPageTracking } from './utils/trackRoute';
-import HomePage from '@/pages/total';
-import { getHomeView } from '@/hooks/useHomeView';
 
 const Dashboard = React.lazy(() => import('@/pages/dashboard'));
 
-const HomeEntry = () => {
+const DashboardRedirect = ({ summary = false }: { summary?: boolean }) => {
   const { search, hash } = useLocation();
-  return getHomeView() === 'dashboard' ? (
-    <Navigate to={{ pathname: '/dashboard', search, hash }} replace />
-  ) : (
-    <Index />
+  return (
+    <Navigate
+      to={{ pathname: summary ? '/summary' : '/', search, hash }}
+      replace
+    />
   );
 };
-const SummaryEntry = () => {
-  const { search, hash } = useLocation();
-  return getHomeView() === 'dashboard' ? (
-    <Navigate to={{ pathname: '/dashboard/summary', search, hash }} replace />
-  ) : (
-    <HomePage />
-  );
-};
+
+const dashboard = () => (
+  <React.Suspense
+    fallback={
+      <div role="status" className="p-8">
+        正在加载 Liang page…
+      </div>
+    }
+  >
+    <Dashboard />
+  </React.Suspense>
+);
 
 if (USE_GOOGLE_ANALYTICS) {
   ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
@@ -46,33 +48,27 @@ const routes = createBrowserRouter(
   [
     {
       path: '/',
-      element: withOptionalGAPageTracking(<HomeEntry />),
+      element: withOptionalGAPageTracking(dashboard()),
     },
     {
       path: 'classic',
-      element: withOptionalGAPageTracking(<Index />),
+      element: <DashboardRedirect />,
     },
     {
-      path: 'dashboard/:section?',
-      element: withOptionalGAPageTracking(
-        <React.Suspense
-          fallback={
-            <div role="status" className="p-8">
-              正在加载新版主页…
-            </div>
-          }
-        >
-          <Dashboard />
-        </React.Suspense>
-      ),
+      path: 'dashboard',
+      element: <DashboardRedirect />,
+    },
+    {
+      path: 'dashboard/summary',
+      element: <DashboardRedirect summary />,
     },
     {
       path: 'summary',
-      element: withOptionalGAPageTracking(<SummaryEntry />),
+      element: withOptionalGAPageTracking(dashboard()),
     },
     {
       path: 'classic/summary',
-      element: withOptionalGAPageTracking(<HomePage />),
+      element: <DashboardRedirect summary />,
     },
     {
       path: '*',

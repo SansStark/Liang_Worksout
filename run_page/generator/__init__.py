@@ -17,9 +17,16 @@ from strava_streams import (
     should_use_streams,
 )
 
-from .db import Activity, init_db, normalize_activity_type, update_or_create_activity
+from .db import (
+    Activity,
+    StravaSyncState,
+    init_db,
+    normalize_activity_type,
+    update_or_create_activity,
+)
 
 from synced_data_file_logger import save_synced_data_file_list
+from strava_credentials import persist_refresh_token
 
 IGNORE_BEFORE_SAVING = os.getenv("IGNORE_BEFORE_SAVING", "").lower() in {
     "1",
@@ -32,6 +39,24 @@ STRAVA_STREAM_RESOLUTION = os.getenv("STRAVA_STREAM_RESOLUTION")
 
 def _activity_polyline(activity):
     return activity.map and activity.map.summary_polyline or ""
+
+
+def newest_activities_first(activities):
+    """Strava may return an after-filtered list oldest first; sort before details."""
+    collected = []
+    listing_error = None
+    try:
+        collected.extend(activities)
+    except Exception as error:
+        # Keep summaries fetched before a pagination failure, then report it.
+        listing_error = error
+    yield from sorted(
+        collected,
+        key=lambda activity: arrow.get(activity.start_date).float_timestamp,
+        reverse=True,
+    )
+    if listing_error is not None:
+        raise listing_error
 
 
 def _set_activity_polyline(activity, polyline_str):
@@ -72,9 +97,15 @@ class Generator:
         self.refresh_token = response["refresh_token"]
 
         self.client.access_token = response["access_token"]
+        expected_athlete = os.getenv("STRAVA_ATHLETE_ID")
+        if expected_athlete:
+            athlete = self.client.get_athlete()
+            if str(athlete.id) != expected_athlete:
+                raise RuntimeError("Strava athlete does not match STRAVA_ATHLETE_ID.")
+        persist_refresh_token(self.client_id, self.refresh_token)
         print("Access ok")
 
-    def sync(self, force, after=None):
+    def sync(self, force, after=None, recent_days=None, before=None):
         """
         Sync activities means sync from strava
         TODO, better name later
@@ -84,19 +115,50 @@ class Generator:
         print("Start syncing")
         if force:
             filters = {"before": datetime.datetime.now(datetime.timezone.utc)}
+        elif before is not None:
+            boundary = arrow.get(before).datetime
+            filters = {"before": boundary}
+            if recent_days:
+                filters["after"] = boundary - datetime.timedelta(days=recent_days)
         elif after is not None:
             filters = {"after": after}
         else:
-            last_activity = self.session.query(func.max(Activity.start_date)).scalar()
+            last_activity = (
+                self.session.query(func.max(Activity.start_date))
+                .filter(Activity.source == "strava")
+                .scalar()
+            )
+            cutoff = arrow.utcnow().shift(days=-recent_days) if recent_days else None
             if last_activity:
                 last_activity_date = arrow.get(last_activity)
                 last_activity_date = last_activity_date.shift(days=-7)
+                if cutoff and last_activity_date < cutoff:
+                    last_activity_date = cutoff
                 filters = {"after": last_activity_date.datetime}
+            elif cutoff:
+                filters = {"after": cutoff.datetime}
             else:
                 filters = {"before": datetime.datetime.now(datetime.timezone.utc)}
 
+        pending_sync = None
+        if recent_days and not force and before is None and after is None:
+            # A partial first import must not advance the next run's lower bound.
+            key = f"recent:{recent_days}:only_run:{int(self.only_run)}"
+            pending_sync = self.session.get(StravaSyncState, key)
+            if pending_sync is not None:
+                filters["after"] = max(
+                    cutoff,
+                    min(arrow.get(pending_sync.after), arrow.get(filters["after"])),
+                ).datetime
+            else:
+                pending_sync = StravaSyncState(
+                    key=key, after=arrow.get(filters["after"]).isoformat()
+                )
+                self.session.add(pending_sync)
+                self.session.commit()
+
         renamed_count = 0
-        for activity in self.client.get_activities(**filters):
+        for activity in newest_activities_first(self.client.get_activities(**filters)):
             strava_activity_type = (
                 getattr(activity, "sport_type", None) or activity.type
             )
@@ -175,6 +237,8 @@ class Generator:
             activity.subtype = strava_activity_type
             activity.type = activity_type
             created, renamed = update_or_create_activity(self.session, activity)
+            # Keep newest-first progress if a later API request reaches its limit.
+            self.session.commit()
             if created:
                 sys.stdout.write("+")
             else:
@@ -182,6 +246,8 @@ class Generator:
             if renamed:
                 renamed_count += 1
             sys.stdout.flush()
+        if pending_sync is not None:
+            self.session.delete(pending_sync)
         self.session.commit()
         if renamed_count:
             print(f"\nAligned {renamed_count} activity title(s) from Strava.")

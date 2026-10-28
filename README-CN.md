@@ -1,3 +1,7 @@
+# Liang page
+
+这是 Liang 的个人运动仪表盘。请先阅读 [本地启动、Strava API 申请与同步指南](docs/LIANG-SETUP.md)。原作者的运动数据已备份并移出站点；默认先同步你最近 90 天的数据。
+
 ## note1: use v2.0 need change vercel setting from Gatsby to Vite
 
 ## note2: 2023.09.26 garmin need secret_string(and in Actions) get `python run_page/garmin_sync.py ${secret_string}` if cn `python run_page/garmin_sync.py ${secret_string} --is-cn`
@@ -16,13 +20,13 @@
 
 ## 新增特性
 
-### 新版仪表盘与经典主页
+### Liang 新版仪表盘
 
-- 顶部的「经典版 / 新版」按钮可在两种主页之间切换。新版地址为 `/dashboard`，经典版地址为 `/classic`；首次访问 `/` 仍显示经典版，之后会记住此浏览器上次选择的版本。
+- 仅保留新版主页，地址为 `/`；经典版页面与版本切换已移除，旧地址自动跳转到新版。
 - 新版适配 running_page 3.0 的原版组件：年度 / 月度 / 周目标、连续记录、活动热力图、分页活动记录、个人概览、中国足迹地图、路线地图、个人最佳、活动日历及轨迹墙。目标初始值沿用参考站，在 `src/components/Dashboard/config.ts` 中可修改；活动年份、类型和距离均可筛选。
-- 两版共用 `src/static/activities.json` 和现有地图组件，保留骑行、徒步、训练、自驾、飞行、铁路等类型。运动统计延续原有规则，不计入自驾、飞行和铁路；旅行仍展示在地图和活动列表中。
-- 版本切换保留 `#run_<活动 ID>`，历史年份的活动也可在两版间继续查看。两版共用深色 / 浅色主题设置。
-- 新版 Summary 地址为 `/dashboard/summary`，支持年 / 月 / 周 / 日 / Life 汇总及运动类型和年份筛选；经典版汇总页为 `/classic/summary`。`/summary` 跟随上次选择的版本，汇总页上的版本按钮也可相互切换。路由和切换链接支持 Vite 的 `PATH_PREFIX` 子目录部署；Vercel 继续使用现有的 SPA 重写规则。
+- 活动来自 `src/static/activities.json`，地图与运动统计保留骑行、徒步、训练等类型；自驾、飞行和铁路不计入运动汇总。
+- 活动链接支持 `#run_<活动 ID>`，保留深色 / 浅色主题与中英文切换。
+- Summary 地址为 `/summary`，支持年 / 月 / 周 / 日 / Life 汇总及类型和年份筛选；旧 summary 地址跳转到此处。支持 Vite 的 `PATH_PREFIX` 子目录部署。
 - 热力图按周一到周日排列，排除自驾、飞行和铁路；年度 / 月度 / 周目标仅统计跑步类活动（包含越野跑和虚拟跑），不随活动列表的类型筛选改变。地图保留全部轨迹，默认镜头定位当前范围中最近一条有轨迹的活动。
 - 个人最佳仅使用 Strava 官方 `best_efforts` 的标准距离成绩及 `elapsed_time`（包含停顿），不按整次活动时间估算。新增数据库字段会自动迁移；常规 Strava 同步会每次补齐最多 20 条未缓存的 5 公里以上跑步记录。历史回填可运行 `python run_page/strava_best_efforts.py --limit 0`，凭据读取已有 `.env` 或环境变量；在 Strava 裁剪活动 / 删除分段成绩后，可用 `--refresh` 重新获取。回填进度逐条保存，缺失接口数据或请求失败时保留已缓存成绩。
 - 前端回归测试：`pnpm run test:dashboard`；成绩同步测试：`python -m unittest discover -s tests -p 'test_strava*.py'`。

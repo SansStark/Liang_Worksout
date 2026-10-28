@@ -8,6 +8,7 @@ yarn-error.log
 # Build directory
 /build
 /dist
+/.vercel/
 .DS_Store
 .sass-cache/
 _posts/
@@ -26,6 +27,11 @@ route.png
 route.svg
 
 .env
+.env.*
+!.env.example
+.local-backup/
+/run_page/data.db
+/run_page/data.db-*
 
 # Timeline batch coordination / atomic write files
 /public/data/activity-timelines/.sync.lock

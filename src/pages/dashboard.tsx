@@ -9,10 +9,8 @@ import { Helmet } from 'react-helmet-async';
 import { Analytics } from '@vercel/analytics/react';
 import useActivities from '@/hooks/useActivities';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
-import { useHomeView } from '@/hooks/useHomeView';
 import { useTheme } from '@/hooks/useTheme';
 import { isActivityExcludedFromTotals, type Activity } from '@/utils/utils';
-import HomeViewSwitch from '@/components/HomeViewSwitch';
 import {
   LocaleProvider,
   useLocale,
@@ -54,7 +52,6 @@ const TYPE_LABELS: Record<string, string> = {
 };
 
 const DashboardContent = () => {
-  useHomeView('dashboard');
   const { activities, years, thisYear } = useActivities();
   const { siteTitle, description, keywords } = useSiteMetadata();
   const { theme, setTheme } = useTheme();
@@ -118,7 +115,7 @@ const DashboardContent = () => {
     Object.entries(values).forEach(([key, value]) =>
       value == null ? next.delete(key) : next.set(key, value)
     );
-    navigate({ pathname: '/dashboard', search: next.toString(), hash: '' });
+    navigate({ pathname: '/', search: next.toString(), hash: '' });
   };
   const selectActivity = (activity: Activity | null, scrollToMap = true) => {
     const next = new URLSearchParams(params);
@@ -130,7 +127,7 @@ const DashboardContent = () => {
       if (filter !== 'all' && activity.type !== filter) next.delete('type');
     }
     navigate({
-      pathname: '/dashboard',
+      pathname: '/',
       search: next.toString(),
       hash: activity ? `#run_${activity.run_id}` : '',
     });
@@ -155,14 +152,14 @@ const DashboardContent = () => {
     <div className={`running-dashboard ${theme === 'dark' ? 'dark' : ''}`}>
       <Helmet>
         <html lang={locale === 'zh' ? 'zh-CN' : 'en'} data-theme={theme} />
-        <title>{siteTitle} · 新版</title>
+        <title>{siteTitle}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
       </Helmet>
       <header className="bg-[var(--color-bg)]/70 sticky top-0 z-50 border-b border-[var(--color-border)] backdrop-blur-md">
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6">
-          <Link to="/dashboard" className="text-xl font-bold">
-            NEEWII<span className="text-[var(--color-run)]">.</span>PAGE
+          <Link to="/" className="text-xl font-bold">
+            Liang<span className="text-[var(--color-run)]"> </span>page
           </Link>
           <nav
             className="flex flex-wrap items-center gap-3 sm:gap-6"
@@ -191,7 +188,7 @@ const DashboardContent = () => {
               {t('tracks')}
             </button>
             <Link
-              to="/dashboard/summary"
+              to="/summary"
               aria-current={page === 'summary' ? 'page' : undefined}
               className={
                 page === 'summary'
@@ -201,7 +198,6 @@ const DashboardContent = () => {
             >
               Summary
             </Link>
-            <HomeViewSwitch />
             <button
               type="button"
               aria-label={theme === 'dark' ? '切换浅色模式' : '切换深色模式'}
@@ -218,7 +214,7 @@ const DashboardContent = () => {
               {locale === 'zh' ? 'EN' : '中'}
             </button>
             <a
-              href="https://github.com/Niewei-Yang/Neewii_Worksout"
+              href="https://github.com/SansStark/Liang_Worksout"
               aria-label="GitHub"
               className="text-sm text-[var(--color-muted)]"
             >
@@ -250,6 +246,16 @@ const DashboardContent = () => {
           />
         ) : (
           <main className="mx-auto max-w-[1400px] px-4 py-5 sm:px-6 sm:py-6">
+            {activities.length === 0 && (
+              <p
+                role="status"
+                className="mb-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] p-5 text-sm text-[var(--color-muted)]"
+              >
+                {locale === 'zh'
+                  ? '还没有运动记录，连接并同步你的 Strava 后即可查看。'
+                  : 'No activities yet. Connect and sync your Strava to get started.'}
+              </p>
+            )}
             <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-[1fr_360px] xl:grid-cols-[1fr_380px]">
               <div className="min-w-0 space-y-6 overflow-hidden">
                 <StatsCards
@@ -345,7 +351,7 @@ const DashboardContent = () => {
         )}
       </Suspense>
       <footer className="border-t border-[var(--color-border)] py-6 text-center text-sm text-[var(--color-muted)]">
-        Neewii ·{' '}
+        Liang ·{' '}
         <a href="https://github.com/yihong0618/running_page">
           running_page 3.0
         </a>

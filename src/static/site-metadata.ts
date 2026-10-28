@@ -16,10 +16,10 @@ const getBasePath = () => {
 };
 
 const data: ISiteMetadataResult = {
-  siteTitle: 'Neewii的Workouts Map',
-  siteUrl: 'neewii-worksout.vercel.app',
-  logo: 'https://avatars.githubusercontent.com/u/138655239?v=4',
-  description: 'Personal site and blog',
+  siteTitle: 'Liang page',
+  siteUrl: import.meta.env.BASE_URL,
+  logo: 'https://github.com/SansStark.png',
+  description: 'Liang 的运动记录：跑步、骑行与户外探索',
   keywords: 'workouts, running, cycling, riding, roadtrip, hiking, swimming',
   navLinks: [
     {
@@ -27,20 +27,8 @@ const data: ISiteMetadataResult = {
       url: `${getBasePath()}/summary`,
     },
     {
-      name: 'Strava',
-      url: `https://www.strava.com/athletes/193524135`,
-    },
-    {
-      name: 'WeihangのPage',
-      url: 'https://weihang-worksout.vercel.app/',
-    },
-    {
-      name: 'YihongのBlog',
-      url: 'https://blog.yihong0618.me/',
-    },
-    {
-      name: 'About',
-      url: 'https://github.com/ben-29/workouts_page/blob/master/README-CN.md',
+      name: 'GitHub',
+      url: 'https://github.com/SansStark/Liang_Worksout',
     },
   ],
 };

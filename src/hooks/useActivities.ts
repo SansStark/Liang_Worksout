@@ -4,7 +4,10 @@ import {
   locationForRun,
   typeForRun,
 } from '@/utils/utils';
-import activities from '@/static/activities.json';
+import activityData from '@/static/activities.json';
+import type { Activity } from '@/utils/utils';
+
+const activities: Activity[] = activityData;
 
 // standardize country names for consistency between mapbox and activities data
 const standardizeCountryName = (country: string): string => {

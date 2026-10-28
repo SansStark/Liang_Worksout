@@ -86,6 +86,13 @@ def _safe_float(value, default=0.0):
         return default
 
 
+class StravaSyncState(Base):
+    __tablename__ = "strava_sync_state"
+
+    key = Column(String, primary_key=True)
+    after = Column(String, nullable=False)
+
+
 class Activity(Base):
     __tablename__ = "activities"
 
