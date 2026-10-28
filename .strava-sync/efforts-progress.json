@@ -2,11 +2,11 @@
   "cycling_pending": 131,
   "deferred": {},
   "finished": false,
-  "next_retry_at": "2026-10-28T07:45:15+00:00",
-  "requests": 32,
-  "running_pending": 1241,
-  "stopped": "API reserve reached; resume in a later batch",
-  "updated_at": "2026-10-28T07:38:42.631480+00:00",
-  "updated_in_batch": 31,
+  "next_retry_at": "2026-10-28T14:45:15+00:00",
+  "requests": 90,
+  "running_pending": 1152,
+  "stopped": "per-run request budget reached",
+  "updated_at": "2026-10-28T14:32:01.326779+00:00",
+  "updated_in_batch": 89,
   "version": 1
 }
