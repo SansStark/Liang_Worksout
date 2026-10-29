@@ -387,6 +387,20 @@
 "average_speed": 4.131,
 "elevation_gain": 14.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 85
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 220
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:56.912479+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -1682,6 +1696,20 @@
 "average_speed": 4.405,
 "elevation_gain": 12.1,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 85
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:29.134479+00:00",
+"best_efforts_version": 2,
 "streak": 6
 },
 {
@@ -1797,6 +1825,25 @@
 "average_speed": 3.608,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 96
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 246
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1362
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:29.872738+00:00",
+"best_efforts_version": 2,
 "streak": 1
 },
 {
@@ -2098,6 +2145,25 @@
 "average_speed": 3.565,
 "elevation_gain": 103.1,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 98
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 255
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1361
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:47.564058+00:00",
+"best_efforts_version": 2,
 "streak": 1
 },
 {
@@ -2146,6 +2212,25 @@
 "average_speed": 3.573,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 107
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 270
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1379
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:42.495795+00:00",
+"best_efforts_version": 2,
 "streak": 1
 },
 {
@@ -2392,6 +2477,30 @@
 "average_speed": 3.583,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 105
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 271
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1378
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2773
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:37.095904+00:00",
+"best_efforts_version": 2,
 "streak": 2
 },
 {
@@ -2610,6 +2719,20 @@
 "average_speed": 4.224,
 "elevation_gain": 11.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 231
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:49.619300+00:00",
+"best_efforts_version": 2,
 "streak": 4
 },
 {
@@ -2746,6 +2869,25 @@
 "average_speed": 3.58,
 "elevation_gain": 20.5,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 78
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 241
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1517
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:40.847270+00:00",
+"best_efforts_version": 2,
 "streak": 3
 },
 {
@@ -3886,6 +4028,20 @@
 "average_speed": 4.298,
 "elevation_gain": 12.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 81
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:40.191501+00:00",
+"best_efforts_version": 2,
 "streak": 1
 },
 {
@@ -3998,6 +4154,30 @@
 "average_speed": 3.61,
 "elevation_gain": 60.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 93
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 235
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1513
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 3246
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:25.002890+00:00",
+"best_efforts_version": 2,
 "streak": 2
 },
 {
@@ -4234,6 +4414,20 @@
 "average_speed": 4.402,
 "elevation_gain": 12.4,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 86
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 225
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:30.641217+00:00",
+"best_efforts_version": 2,
 "streak": 5,
 "province": "河北省"
 },
@@ -4372,6 +4566,30 @@
 "average_speed": 3.553,
 "elevation_gain": 58.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 91
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 234
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1192
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2817
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:41.972423+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "河北省"
 },
@@ -5136,6 +5354,20 @@
 "average_speed": 4.051,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 240
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:00.829593+00:00",
+"best_efforts_version": 2,
 "streak": 4,
 "province": "河北省"
 },
@@ -5339,6 +5571,25 @@
 "average_speed": 3.566,
 "elevation_gain": 59.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 97
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 249
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1319
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:45.866160+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "河北省"
 },
@@ -5610,6 +5861,20 @@
 "average_speed": 4.201,
 "elevation_gain": 12.6,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 83
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 325
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:51.296523+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "河北省"
 },
@@ -5695,6 +5960,25 @@
 "average_speed": 3.589,
 "elevation_gain": 39.4,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 224
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 2033
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:37.449942+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "河北省"
 },
@@ -6052,6 +6336,25 @@
 "average_speed": 3.633,
 "elevation_gain": 113.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 82
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 207
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1220
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:25.581979+00:00",
+"best_efforts_version": 2,
 "streak": 8,
 "province": "北京市"
 },
@@ -6179,6 +6482,20 @@
 "average_speed": 4.308,
 "elevation_gain": 27.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 84
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 317
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:39.869102+00:00",
+"best_efforts_version": 2,
 "streak": 12,
 "province": "北京市"
 },
@@ -6407,6 +6724,20 @@
 "average_speed": 4.295,
 "elevation_gain": 69.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 78
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 302
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:41.646985+00:00",
+"best_efforts_version": 2,
 "streak": 4,
 "province": "北京市"
 },
@@ -7196,6 +7527,30 @@
 "average_speed": 3.518,
 "elevation_gain": 153.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 77
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 222
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1345
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2866
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:01.386768+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -7456,6 +7811,20 @@
 "average_speed": 4.371,
 "elevation_gain": 69.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 88
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 227
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:34.530045+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -7866,6 +8235,20 @@
 "average_speed": 4.289,
 "elevation_gain": 74.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 91
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 231
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:43.453351+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -8097,6 +8480,30 @@
 "average_speed": 3.589,
 "elevation_gain": 73.1,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 102
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 264
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1371
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2761
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:34.866075+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -8640,6 +9047,20 @@
 "average_speed": 4.432,
 "elevation_gain": 52.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 88
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 222
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:24.242395+00:00",
+"best_efforts_version": 2,
 "streak": 4,
 "province": "北京市"
 },
@@ -9124,6 +9545,30 @@
 "average_speed": 3.525,
 "elevation_gain": 132.8,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 98
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 251
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1376
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2822
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:57.783676+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -9489,6 +9934,30 @@
 "average_speed": 3.598,
 "elevation_gain": 74.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 80
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 235
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1345
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2821
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:29.433539+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -9932,6 +10401,20 @@
 "average_speed": 4.297,
 "elevation_gain": 173.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 81
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 278
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:41.130971+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "重庆市"
 },
@@ -10439,6 +10922,30 @@
 "average_speed": 3.597,
 "elevation_gain": 96.8,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 105
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 267
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1364
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2770
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:30.968047+00:00",
+"best_efforts_version": 2,
 "streak": 6,
 "province": "北京市"
 },
@@ -10808,6 +11315,20 @@
 "average_speed": 4.236,
 "elevation_gain": 56.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 92
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 232
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:48.673824+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -10825,6 +11346,20 @@
 "average_speed": 4.337,
 "elevation_gain": 56.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 89
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 225
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:37.915823+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -11074,6 +11609,20 @@
 "average_speed": 4.413,
 "elevation_gain": 27.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 225
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:28.657719+00:00",
+"best_efforts_version": 2,
 "streak": 7,
 "province": "北京市"
 },
@@ -11122,6 +11671,20 @@
 "average_speed": 4.42,
 "elevation_gain": 27.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 85
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:26.382657+00:00",
+"best_efforts_version": 2,
 "streak": 7,
 "province": "北京市"
 },
@@ -11139,6 +11702,20 @@
 "average_speed": 4.417,
 "elevation_gain": 27.4,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:27.101706+00:00",
+"best_efforts_version": 2,
 "streak": 7,
 "province": "北京市"
 },
@@ -11759,6 +12336,20 @@
 "average_speed": 4.132,
 "elevation_gain": 20.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 91
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 237
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:55.746139+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -14415,6 +15006,20 @@
 "average_speed": 4.165,
 "elevation_gain": 54.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 94
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 235
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:53.690742+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -14432,6 +15037,20 @@
 "average_speed": 4.244,
 "elevation_gain": 33.4,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 231
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:46.848072+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -14449,6 +15068,20 @@
 "average_speed": 4.157,
 "elevation_gain": 20.5,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 241
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:55.175440+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -14862,6 +15495,25 @@
 "average_speed": 3.558,
 "elevation_gain": 87.3,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 99
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 250
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1342
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:52.621676+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -15064,6 +15716,25 @@
 "average_speed": 3.632,
 "elevation_gain": 65.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 100
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 251
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1369
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:28.119728+00:00",
+"best_efforts_version": 2,
 "streak": 5,
 "province": "北京市"
 },
@@ -15335,6 +16006,25 @@
 "average_speed": 3.569,
 "elevation_gain": 52.2,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 102
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 264
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1401
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:44.203635+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -15454,6 +16144,25 @@
 "average_speed": 3.559,
 "elevation_gain": 133.1,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 101
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 255
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1329
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:50.961065+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -15943,6 +16652,20 @@
 "average_speed": 4.181,
 "elevation_gain": 35.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 93
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 237
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:51.745143+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -15960,6 +16683,20 @@
 "average_speed": 4.394,
 "elevation_gain": 24.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 82
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 215
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:32.354640+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -16081,6 +16818,15 @@
 "average_speed": 4.339,
 "elevation_gain": 13.9,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:38.592745+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -16149,6 +16895,30 @@
 "average_speed": 3.523,
 "elevation_gain": 46.1,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 92
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 239
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1377
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2850
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:59.485857+00:00",
+"best_efforts_version": 2,
 "streak": 6,
 "province": "北京市"
 },
@@ -16913,6 +17683,15 @@
 "average_speed": 4.363,
 "elevation_gain": 13.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 88
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:36.691976+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -17464,6 +18243,30 @@
 "average_speed": 3.537,
 "elevation_gain": 30.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 98
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 268
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1388
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2795
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:52.206861+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -17561,6 +18364,30 @@
 "average_speed": 3.532,
 "elevation_gain": 11.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 88
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 233
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1405
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2853
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:54.054248+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -17772,6 +18599,30 @@
 "average_speed": 3.514,
 "elevation_gain": 36.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 106
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 272
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1389
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2792
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:03.014783+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -18348,6 +19199,30 @@
 "average_speed": 3.613,
 "elevation_gain": 23.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 85
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 236
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1315
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2736
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:22.682051+00:00",
+"best_efforts_version": 2,
 "streak": 1,
 "province": "北京市"
 },
@@ -18754,6 +19629,30 @@
 "average_speed": 3.542,
 "elevation_gain": 194.7,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 95
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 241
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1363
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2780
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:49.010708+00:00",
+"best_efforts_version": 2,
 "streak": 2,
 "province": "北京市"
 },
@@ -19853,6 +20752,30 @@
 "average_speed": 3.602,
 "elevation_gain": 71.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 99
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 251
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1318
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2795
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:27.543599+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 4,
 "province": "云南省"
@@ -22520,6 +23443,25 @@
 "average_speed": 3.562,
 "elevation_gain": 10.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 97
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 242
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1409
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:49.327928+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 2,
 "province": "北京市"
@@ -23533,6 +24475,20 @@
 "average_speed": 4.351,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 79
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 206
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:35.668640+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 1,
 "province": "浙江省"
@@ -24452,6 +25408,20 @@
 "average_speed": 4.048,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 95
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 244
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:02.211312+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 1,
 "province": "浙江省"
@@ -24929,6 +25899,20 @@
 "average_speed": 4.08,
 "elevation_gain": 6.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 93
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 237
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:58.461168+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 2,
 "province": "浙江省"
@@ -24947,6 +25931,20 @@
 "average_speed": 4.421,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 225
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:24.587055+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 2,
 "province": "浙江省"
@@ -24965,6 +25963,20 @@
 "average_speed": 4.402,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:30.287375+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 2,
 "province": "浙江省"
@@ -25692,6 +26704,20 @@
 "average_speed": 4.166,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 94
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 237
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:53.233669+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
@@ -25710,6 +26736,20 @@
 "average_speed": 4.241,
 "elevation_gain": 5.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 231
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:48.128824+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
@@ -25728,6 +26768,20 @@
 "average_speed": 4.112,
 "elevation_gain": 4.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 92
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 238
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:57.394234+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
@@ -25746,6 +26800,20 @@
 "average_speed": 4.395,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 86
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 221
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:32.017381+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
@@ -26066,6 +27134,20 @@
 "average_speed": 4.276,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 216
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:44.756075+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 10,
 "province": "北京市"
@@ -26189,6 +27271,25 @@
 "average_speed": 3.524,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 106
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 269
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1418
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:00.000791+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 1,
 "province": "北京市"
@@ -27336,6 +28437,20 @@
 "average_speed": 4.273,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 92
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 234
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:46.381133+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 5,
 "province": "北京市"
@@ -27390,6 +28505,15 @@
 "average_speed": 4.049,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 98
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:02.611819+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 5,
 "province": "北京市"
@@ -27408,6 +28532,20 @@
 "average_speed": 4.055,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 86
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 321
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:00.428923+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 5,
 "province": "北京市"
@@ -27769,6 +28907,20 @@
 "average_speed": 4.291,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 228
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:43.006704+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 5,
 "province": "北京市"
@@ -29136,6 +30288,25 @@
 "average_speed": 3.586,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 254
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1394
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:39.504681+00:00",
+"best_efforts_version": 2,
 "streak": 17,
 "province": "北京市"
 },
@@ -30029,6 +31200,30 @@
 "average_speed": 3.526,
 "elevation_gain": 41.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 102
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 257
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1370
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2939
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:56.107076+00:00",
+"best_efforts_version": 2,
 "streak": 8,
 "province": "北京市"
 },
@@ -30434,6 +31629,30 @@
 "average_speed": 3.596,
 "elevation_gain": 23.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 93
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 238
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1263
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2536
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:32.864670+00:00",
+"best_efforts_version": 2,
 "streak": 6,
 "province": "北京市"
 },
@@ -30564,6 +31783,30 @@
 "average_speed": 3.562,
 "elevation_gain": 12.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 100
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 257
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1369
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2783
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:38.982976+00:00",
+"best_efforts_version": 2,
 "streak": 3,
 "province": "北京市"
 },
@@ -30639,6 +31882,30 @@
 "average_speed": 3.561,
 "elevation_gain": 8.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 95
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 251
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1317
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2798
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:40.533924+00:00",
+"best_efforts_version": 2,
 "streak": 6,
 "province": "北京市"
 },
@@ -30760,6 +32027,30 @@
 "average_speed": 3.547,
 "elevation_gain": 15.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 106
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 270
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1382
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2799
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:47.216634+00:00",
+"best_efforts_version": 2,
 "streak": 9,
 "province": "北京市"
 },
@@ -30777,6 +32068,30 @@
 "average_speed": 3.54,
 "elevation_gain": 18.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 92
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 243
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1374
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2816
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:50.573327+00:00",
+"best_efforts_version": 2,
 "streak": 10,
 "province": "北京市"
 },
@@ -31055,6 +32370,30 @@
 "average_speed": 3.592,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 96
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 242
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1292
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2596
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:33.412300+00:00",
+"best_efforts_version": 2,
 "streak": 18,
 "province": "北京市"
 },
@@ -31394,6 +32733,30 @@
 "average_speed": 3.596,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 96
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 250
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1294
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2762
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:31.475870+00:00",
+"best_efforts_version": 2,
 "streak": 25,
 "province": "北京市"
 },
@@ -31723,6 +33086,30 @@
 "average_speed": 3.517,
 "elevation_gain": 2.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 104
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 249
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1379
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2801
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:01:01.862958+00:00",
+"best_efforts_version": 2,
 "streak": 6,
 "province": "北京市"
 },
@@ -32125,6 +33512,30 @@
 "average_speed": 3.55,
 "elevation_gain": 23.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 101
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 263
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1377
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2785
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:43.845980+00:00",
+"best_efforts_version": 2,
 "streak": 10,
 "province": "北京市"
 },
@@ -32732,6 +34143,25 @@
 "average_speed": 3.554,
 "elevation_gain": 2.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 103
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 262
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1396
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:54.442282+00:00",
+"best_efforts_version": 2,
 "streak": 7,
 "province": "北京市"
 },
@@ -33062,6 +34492,15 @@
 "average_speed": 4.275,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 90
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:45.146228+00:00",
+"best_efforts_version": 2,
 "streak": 14,
 "province": "北京市"
 },
@@ -34855,6 +36294,25 @@
 "average_speed": 3.539,
 "elevation_gain": 13.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 87
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 220
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1350
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:58.152944+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 8,
 "province": "北京市"
@@ -35059,6 +36517,25 @@
 "average_speed": 3.634,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 93
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 238
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1321
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:23.190284+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
@@ -35516,6 +36993,20 @@
 "average_speed": 4.372,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 88
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 223
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:34.011179+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 10,
 "province": "北京市"
@@ -35733,6 +37224,25 @@
 "average_speed": 3.543,
 "elevation_gain": 4.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 109
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 274
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1380
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:56.427668+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 16,
 "province": "北京市"
@@ -35785,6 +37295,20 @@
 "average_speed": 4.079,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 96
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 242
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:59.051696+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 17,
 "province": "北京市"
@@ -35890,6 +37414,25 @@
 "average_speed": 3.59,
 "elevation_gain": 6.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 103
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 262
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1342
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:35.236697+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 19,
 "province": "北京市"
@@ -35942,6 +37485,30 @@
 "average_speed": 3.548,
 "elevation_gain": 7.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 107
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 269
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1395
+},
+{
+"name": "10K",
+"distance": 10000.0,
+"elapsed_time": 2815
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:45.559003+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 21,
 "province": "北京市"
@@ -35960,6 +37527,20 @@
 "average_speed": 4.215,
 "elevation_gain": 0.0,
 "source": "strava",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 43
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 222
+}
+],
+"best_efforts_synced_at": "2026-10-29T04:00:50.165849+00:00",
+"best_efforts_version": 2,
 "device_watts": true,
 "streak": 21,
 "province": "北京市"
