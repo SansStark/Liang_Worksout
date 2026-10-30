@@ -2,11 +2,11 @@
   "cycling_pending": 131,
   "deferred": {},
   "finished": false,
-  "next_retry_at": "2026-10-30T01:45:15+00:00",
+  "next_retry_at": "2026-10-30T07:45:15+00:00",
   "requests": 90,
-  "running_pending": 529,
+  "running_pending": 440,
   "stopped": "per-run request budget reached",
-  "updated_at": "2026-10-30T01:31:10.134273+00:00",
+  "updated_at": "2026-10-30T07:41:03.582019+00:00",
   "updated_in_batch": 89,
   "version": 1
 }
