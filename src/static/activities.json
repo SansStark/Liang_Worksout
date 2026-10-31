@@ -16570,6 +16570,8 @@
 "elevation_gain": 237.3,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:13.439074+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -16825,6 +16827,8 @@
 "elevation_gain": 1007.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:14.357255+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -17472,6 +17476,8 @@
 "elevation_gain": 8.3,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:14.627448+00:00",
 "streak": 8,
 "province": "北京市"
 },
@@ -17645,6 +17651,8 @@
 "elevation_gain": 16.7,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:14.980812+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -18056,6 +18064,8 @@
 "elevation_gain": 5.9,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:15.274996+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -19386,6 +19396,8 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:15.642154+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -19712,6 +19724,8 @@
 "elevation_gain": 2.3,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:15.953237+00:00",
 "streak": 2,
 "province": "北京市"
 },
@@ -20314,6 +20328,8 @@
 "elevation_gain": 20.5,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:16.281742+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -20922,6 +20938,8 @@
 "elevation_gain": 183.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:17.202522+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -20940,6 +20958,8 @@
 "elevation_gain": 192.6,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:16.677774+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21056,6 +21076,8 @@
 "elevation_gain": 591.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:17.886256+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21074,6 +21096,8 @@
 "elevation_gain": 999.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:18.695880+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21092,6 +21116,8 @@
 "elevation_gain": 1136.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:19.455663+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21286,6 +21312,8 @@
 "elevation_gain": 1817.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:20.427005+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21304,6 +21332,8 @@
 "elevation_gain": 1208.8,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:20.945117+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -21375,6 +21405,8 @@
 "elevation_gain": 4.4,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:21.258951+00:00",
 "streak": 3,
 "province": "上海市"
 },
@@ -21434,6 +21466,8 @@
 "elevation_gain": 4.2,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:21.660415+00:00",
 "streak": 4,
 "province": "上海市"
 },
@@ -21504,6 +21538,8 @@
 "elevation_gain": 2.4,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:21.985909+00:00",
 "streak": 5,
 "province": "上海市"
 },
@@ -21594,6 +21630,8 @@
 "elevation_gain": 3.6,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:22.286722+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -24663,6 +24701,8 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:22.591359+00:00",
 "streak": 2,
 "province": "北京市"
 },
@@ -24681,6 +24721,8 @@
 "elevation_gain": 27.5,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:22.941689+00:00",
 "streak": 2,
 "province": "北京市"
 },
@@ -24699,6 +24741,8 @@
 "elevation_gain": 7.4,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:23.263736+00:00",
 "streak": 2,
 "province": "北京市"
 },
@@ -28892,6 +28936,8 @@
 "elevation_gain": 626.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:23.780846+00:00",
 "streak": 6,
 "province": "云南省"
 },
@@ -29447,6 +29493,8 @@
 "elevation_gain": 81.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:24.187555+00:00",
 "streak": 12,
 "province": "云南省"
 },
@@ -29465,6 +29513,8 @@
 "elevation_gain": 84.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:24.570601+00:00",
 "streak": 12,
 "province": "云南省"
 },
@@ -32981,6 +33031,8 @@
 "elevation_gain": 19.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:24.910754+00:00",
 "streak": 2,
 "province": "浙江省"
 },
@@ -34480,6 +34532,8 @@
 "elevation_gain": 85.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:25.262752+00:00",
 "streak": 3,
 "province": "上海市"
 },
@@ -34498,6 +34552,8 @@
 "elevation_gain": 12.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:25.539470+00:00",
 "streak": 3,
 "province": "浙江省"
 },
@@ -34548,6 +34604,8 @@
 "elevation_gain": 3.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:25.845727+00:00",
 "streak": 1,
 "province": "浙江省"
 },
@@ -34582,6 +34640,8 @@
 "elevation_gain": 426.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:26.287608+00:00",
 "streak": 3,
 "province": "浙江省"
 },
@@ -34834,6 +34894,8 @@
 "elevation_gain": 2.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:26.563138+00:00",
 "streak": 1,
 "province": "浙江省"
 },
@@ -34932,6 +34994,8 @@
 "elevation_gain": 3224.3,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:29.834457+00:00",
 "streak": 3,
 "province": "浙江省"
 },
@@ -34950,6 +35014,8 @@
 "elevation_gain": 334.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:27.327592+00:00",
 "streak": 3,
 "province": "浙江省"
 },
@@ -34968,6 +35034,8 @@
 "elevation_gain": 12.5,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:26.849237+00:00",
 "streak": 3,
 "province": "浙江省"
 },
@@ -34986,6 +35054,8 @@
 "elevation_gain": 837.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:27.887052+00:00",
 "streak": 4,
 "province": "浙江省"
 },
@@ -35004,6 +35074,8 @@
 "elevation_gain": 1075.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:28.453208+00:00",
 "streak": 5,
 "province": "浙江省"
 },
@@ -35022,6 +35094,8 @@
 "elevation_gain": 191.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:28.958708+00:00",
 "streak": 6,
 "province": "浙江省"
 },
@@ -35786,6 +35860,8 @@
 "elevation_gain": 3.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:30.194532+00:00",
 "streak": 1,
 "province": "浙江省"
 },
@@ -36515,6 +36591,8 @@
 "elevation_gain": 17.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:30.626415+00:00",
 "streak": 5,
 "province": "浙江省"
 },
@@ -36602,6 +36680,8 @@
 "elevation_gain": 6.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:30.895363+00:00",
 "streak": 6,
 "province": "浙江省"
 },
@@ -36620,6 +36700,8 @@
 "elevation_gain": 3.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:31.192781+00:00",
 "streak": 6,
 "province": "浙江省"
 },
@@ -36655,6 +36737,8 @@
 "elevation_gain": 7.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:31.475819+00:00",
 "streak": 7,
 "province": "浙江省"
 },
@@ -36673,6 +36757,8 @@
 "elevation_gain": 1.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:31.777240+00:00",
 "streak": 7,
 "province": "浙江省"
 },
@@ -41635,6 +41721,8 @@
 "elevation_gain": 14.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:32.117792+00:00",
 "streak": 6,
 "province": "北京市"
 },
@@ -43258,6 +43346,8 @@
 "elevation_gain": 43.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:32.552270+00:00",
 "streak": 1,
 "province": "北京市"
 },
@@ -47305,6 +47395,8 @@
 "elevation_gain": 375.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:33.099965+00:00",
 "streak": 4,
 "province": "重庆市"
 },
@@ -49321,6 +49413,8 @@
 "elevation_gain": 1194.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:33.849369+00:00",
 "streak": 7,
 "province": "北京市"
 },
@@ -49339,6 +49433,8 @@
 "elevation_gain": 1129.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:34.626911+00:00",
 "streak": 7,
 "province": "北京市"
 },
@@ -52453,6 +52549,8 @@
 "elevation_gain": 13.7,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:34.967663+00:00",
 "streak": 22,
 "province": "北京市"
 },
@@ -52752,6 +52850,8 @@
 "elevation_gain": 963.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:35.557360+00:00",
 "streak": 27,
 "province": "北京市"
 },
@@ -53109,6 +53209,8 @@
 "elevation_gain": 30.0,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:35.850957+00:00",
 "streak": 35,
 "province": "北京市"
 },
@@ -53169,6 +53271,8 @@
 "elevation_gain": 16.6,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:36.143269+00:00",
 "streak": 35,
 "province": "北京市"
 },
@@ -53203,6 +53307,8 @@
 "elevation_gain": 17.5,
 "source": "strava",
 "device_watts": false,
+"power_efforts": [],
+"power_efforts_synced_at": "2026-10-31T18:48:36.421962+00:00",
 "streak": 1,
 "province": "北京市"
 },
