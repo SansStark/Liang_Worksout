@@ -52916,6 +52916,11 @@
 "average_speed": 2.904,
 "elevation_gain": 5.0,
 "source": "strava",
+"temperature_min": 28.6,
+"temperature_max": 28.6,
+"temperature_source": "open-meteo",
+"weather_code": 51,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52953,6 +52958,11 @@
 "average_speed": 2.024,
 "elevation_gain": 46.0,
 "source": "strava",
+"temperature_min": 26.7,
+"temperature_max": 28.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "streak": 30,
 "province": "辽宁省"
 },
@@ -52970,6 +52980,11 @@
 "average_speed": 3.187,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": 22.6,
+"temperature_max": 23.4,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -53002,6 +53017,11 @@
 "average_speed": 2.818,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 23.4,
+"temperature_max": 24.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -53039,6 +53059,11 @@
 "average_speed": 3.21,
 "elevation_gain": 4.0,
 "source": "strava",
+"temperature_min": 22.7,
+"temperature_max": 22.7,
+"temperature_source": "open-meteo",
+"weather_code": 53,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -57364,6 +57389,22 @@
 "summary_polyline": "",
 "average_heartrate": 116.8,
 "average_speed": 0.458,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 2
+},
+{
+"run_id": 20827464762,
+"name": "第8️⃣2️⃣天丨练胸with杰、晨",
+"distance": 0.0,
+"moving_time": "1:10:07",
+"type": "Workout",
+"start_date": "2026-11-02 10:06:52+00:00",
+"start_date_local": "2026-11-02 18:06:52",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 89.7,
+"average_speed": 0.0,
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 2
