@@ -53092,6 +53092,11 @@
 "average_speed": 3.399,
 "elevation_gain": 8.0,
 "source": "strava",
+"temperature_min": 23.1,
+"temperature_max": 24.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -53134,6 +53139,11 @@
 "average_speed": 3.434,
 "elevation_gain": 20.0,
 "source": "strava",
+"temperature_min": 31.1,
+"temperature_max": 31.6,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -53208,6 +53218,11 @@
 "average_speed": 9.379,
 "elevation_gain": 30.0,
 "source": "strava",
+"temperature_min": 29.9,
+"temperature_max": 29.9,
+"temperature_source": "open-meteo",
+"weather_code": 2,
+"weather_source": "open-meteo",
 "device_watts": false,
 "power_efforts": [],
 "power_efforts_synced_at": "2026-10-31T18:48:35.850957+00:00",
@@ -53228,6 +53243,11 @@
 "average_speed": 1.99,
 "elevation_gain": 1054.0,
 "source": "strava",
+"temperature_min": 26.5,
+"temperature_max": 28.7,
+"temperature_source": "open-meteo",
+"weather_code": 1,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -57289,5 +57309,63 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 20823772959,
+"name": "康复训练Day1️⃣：慢跑40分钟",
+"distance": 6056.1,
+"moving_time": "0:40:55",
+"type": "Run",
+"start_date": "2026-11-01 23:22:29+00:00",
+"start_date_local": "2026-11-02 07:22:29",
+"location_country": "北京航空航天大学（沙河校区）, 9, 高教园南三街, 沙河镇, 昌平区, 北京市, 102206, 中国",
+"summary_polyline": "unatFmpsdUD?DIZGT?NIDGlCyIEE@CEGGWAQR]\\K\\EJE`@GVQPENIVCPGn@WFAVOH@JH@RNRLDZ@H~ABP@f@CRG?KDk@Cu@HSAc@JG@ECACC}ACQCk@BGFChBGfAIB`@@|@Dv@AFWJaBD[Dc@@AAAKGaCCMBEh@C^GlBKBBBJ?hAF|@AHyANe@@KBi@DCCAIIsCBGLAr@ArBOBBHpCALqANMA[@m@JK?EIAcAGmABIFCb@Ax@IT@j@GHADFFhBDb@EHGBWBABa@@k@HYAk@BCAGqB?e@@Il@Ap@G`@Al@KD?FD?~@DtAEDu@Lg@@c@DW?SBGCGq@@SGq@?a@@CFAV?d@GbAGBAL?VCHBBtAD|@?BGBg@HkCLGaA?o@Ec@@IFCt@Aj@Il@A^EDFHhCAJGBiAHU?WD_@?WDES@OKqBBIfAId@A|@KF?B@BL@t@FrAEDe@Fg@@i@FW?a@DC?C]@EZCCcAAUYBEEAUDGv@Cb@Gf@?j@IF?D~AFx@EFyAHSD_@@g@FCAAG?g@IaB?MDEtAIr@Aj@IBHDl@B`BCFuAPs@?k@DCICWAc@@INIbBI|@IDDBHF|@CFw@HmAFs@DACImB?e@BGzBMv@KDDBvAD~@CDoDTGECIEoAC{@FCbAKtAETEFDBrADx@CJw@LU?SDUAw@FC?EGI{Cz@IjACl@GD@HrB@^ADIDk@FiADUFEAUBGCCUAoACq@BGDA`@ARE\\?NENSBKCe@CKEAi@Tq@RqBv@wA^KNEPBTP~@AHELIH_AZ_@Dq@Rk@VYH[XMDI?",
+"average_heartrate": 126.6,
+"average_speed": 2.467,
+"elevation_gain": 4.0,
+"source": "strava",
+"temperature_min": 1.9,
+"temperature_max": 3.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 150
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 385
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 2002
+}
+],
+"best_efforts_synced_at": "2026-11-02T06:13:27.108205+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 2,
+"province": "北京市"
+},
+{
+"run_id": 20824957988,
+"name": "康复训练Day1️⃣：游泳60分钟",
+"distance": 1600.0,
+"moving_time": "0:58:16",
+"type": "Swim",
+"start_date": "2026-11-02 03:53:46+00:00",
+"start_date_local": "2026-11-02 11:53:46",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 116.8,
+"average_speed": 0.458,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 2
 }
 ]
