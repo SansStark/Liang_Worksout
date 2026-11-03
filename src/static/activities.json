@@ -52548,6 +52548,11 @@
 "average_speed": 9.943,
 "elevation_gain": 13.7,
 "source": "strava",
+"temperature_min": 28.7,
+"temperature_max": 28.7,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "device_watts": false,
 "power_efforts": [],
 "power_efforts_synced_at": "2026-10-31T18:48:34.967663+00:00",
@@ -52568,6 +52573,11 @@
 "average_speed": 3.161,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": 24.3,
+"temperature_max": 24.3,
+"temperature_source": "open-meteo",
+"weather_code": 1,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52600,6 +52610,11 @@
 "average_speed": 4.185,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": 26.1,
+"temperature_max": 26.1,
+"temperature_source": "open-meteo",
+"weather_code": 1,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52653,6 +52668,11 @@
 "average_speed": 3.383,
 "elevation_gain": 5.0,
 "source": "strava",
+"temperature_min": 26.9,
+"temperature_max": 26.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52706,6 +52726,11 @@
 "average_speed": 3.649,
 "elevation_gain": 8.0,
 "source": "strava",
+"temperature_min": 24.1,
+"temperature_max": 25.7,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -57431,7 +57456,7 @@
 },
 {
 "run_id": 20836284811,
-"name": "☀️ 晨间跑步",
+"name": "康复训练Day2️⃣：慢跑30分钟，速度快了还是不太行",
 "distance": 4478.3,
 "moving_time": "0:32:33",
 "type": "Run",
@@ -57465,5 +57490,37 @@
 "device_watts": true,
 "streak": 3,
 "province": "北京市"
+},
+{
+"run_id": 20837981062,
+"name": "康复训练Day2:游泳60分钟",
+"distance": 1650.0,
+"moving_time": "0:57:31",
+"type": "Swim",
+"start_date": "2026-11-03 03:55:19+00:00",
+"start_date_local": "2026-11-03 11:55:19",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 129.0,
+"average_speed": 0.478,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 3
+},
+{
+"run_id": 20841125068,
+"name": "第8️⃣3️⃣天丨练肩with杰、晨",
+"distance": 0.0,
+"moving_time": "1:19:24",
+"type": "Workout",
+"start_date": "2026-11-03 10:14:38+00:00",
+"start_date_local": "2026-11-03 18:14:38",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 102.2,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 3
 }
 ]
