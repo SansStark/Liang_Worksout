@@ -52764,6 +52764,11 @@
 "average_speed": 3.298,
 "elevation_gain": 3.0,
 "source": "strava",
+"temperature_min": 27.3,
+"temperature_max": 27.3,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52801,6 +52806,11 @@
 "average_speed": 3.339,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 27.3,
+"temperature_max": 28.3,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52849,6 +52859,11 @@
 "average_speed": 7.902,
 "elevation_gain": 963.0,
 "source": "strava",
+"temperature_min": 24.2,
+"temperature_max": 28.2,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "device_watts": false,
 "power_efforts": [],
 "power_efforts_synced_at": "2026-10-31T18:48:35.557360+00:00",
@@ -52869,6 +52884,11 @@
 "average_speed": 0.748,
 "elevation_gain": 1702.0,
 "source": "strava",
+"temperature_min": 24.5,
+"temperature_max": 29.3,
+"temperature_source": "open-meteo",
+"weather_code": 51,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -57408,5 +57428,42 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 2
+},
+{
+"run_id": 20836284811,
+"name": "☀️ 晨间跑步",
+"distance": 4478.3,
+"moving_time": "0:32:33",
+"type": "Run",
+"start_date": "2026-11-02 23:32:48+00:00",
+"start_date_local": "2026-11-03 07:32:48",
+"location_country": "北京航空航天大学（沙河校区）, 9, 高教园南三街, 沙河镇, 昌平区, 北京市, 102206, 中国",
+"summary_polyline": "omatFcqsdUI^r@AYaAPXSc@@?BLNB`@?FKBMA]YaBM_@?KHM~@Yj@UNENOFQAIQeA@UHKPILC`A]`@Kt@[z@Ul@WHADJD\\NTLFNCF@H|CEBwBNSAg@FCECeAEiA?INEL?h@G^?TE`@AREFBFdADhACLw@J[?YDU?YDY?EEEwCZGhAEJCR?h@GF@BFHvB?ZGDQBc@BQ?KBaADKBQCCIAmAEs@?K@CJEzAIf@Ad@GB?@D@X@p@FdACF]He@@_@Fc@AKD_@@GCKsCBIHAzBMj@GFBLrCEHG@_@@_AJUAs@HGEEgBEk@DIF?nCMZGDBBnAFfAOFM?YDY?iAFWDIACI?{@IqADGFA\\?j@EX?dAKB@LvCEDkBJ[Ag@HGEEaABGdAIp@At@IHB@FD|@ED_BLm@CWDI?GACm@@[FExBMn@KFBBn@?`@EDu@Dk@@a@DKAWDGAEEAIEo@DGv@E\\IHEpAIDBFdA?HGB[Bq@K}@BODQ?GCG}@BGnD]HF@`@QFw@B_@DeABGC?Eh@E@C\\?NET?j@GR?FGASICQDeAFSFMAUDY@EBALHH^?tBQT?FACQECkBHEBEH@JBBFAj@GbAC@i@E]M[MQWIG_@ECGCSDUHEDQB",
+"average_heartrate": 119.1,
+"average_speed": 2.293,
+"elevation_gain": 6.0,
+"source": "strava",
+"temperature_min": 2.2,
+"temperature_max": 4.0,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 155
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 417
+}
+],
+"best_efforts_synced_at": "2026-11-03T01:00:55.218955+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 3,
+"province": "北京市"
 }
 ]
