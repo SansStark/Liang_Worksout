@@ -52077,6 +52077,11 @@
 "average_speed": 1.085,
 "elevation_gain": 1220.0,
 "source": "strava",
+"temperature_min": 25.6,
+"temperature_max": 34.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52156,6 +52161,11 @@
 "average_speed": 3.543,
 "elevation_gain": 4.0,
 "source": "strava",
+"temperature_min": 25.5,
+"temperature_max": 25.9,
+"temperature_source": "open-meteo",
+"weather_code": 55,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52209,6 +52219,11 @@
 "average_speed": 2.739,
 "elevation_gain": 4.0,
 "source": "strava",
+"temperature_min": 22.7,
+"temperature_max": 22.7,
+"temperature_source": "open-meteo",
+"weather_code": 2,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52241,6 +52256,11 @@
 "average_speed": 4.079,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 22.7,
+"temperature_max": 22.7,
+"temperature_source": "open-meteo",
+"weather_code": 2,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -52273,6 +52293,11 @@
 "average_speed": 4.3,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 22.8,
+"temperature_max": 22.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -57518,7 +57543,7 @@
 },
 {
 "run_id": 20837981062,
-"name": "康复训练Day2:游泳60分钟",
+"name": "康复训练Day2️⃣:游泳60分钟",
 "distance": 1650.0,
 "moving_time": "0:57:31",
 "type": "Swim",
