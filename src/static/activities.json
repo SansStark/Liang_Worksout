@@ -50148,6 +50148,11 @@
 "average_speed": 0.996,
 "elevation_gain": 840.0,
 "source": "strava",
+"temperature_min": 15.2,
+"temperature_max": 19.6,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "streak": 4,
 "province": "北京市"
 },
@@ -50181,6 +50186,11 @@
 "average_speed": 2.861,
 "elevation_gain": 10.0,
 "source": "strava",
+"temperature_min": 23.6,
+"temperature_max": 26.0,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -50482,6 +50492,11 @@
 "average_speed": 0.79,
 "elevation_gain": 430.0,
 "source": "strava",
+"temperature_min": 20.4,
+"temperature_max": 21.9,
+"temperature_source": "open-meteo",
+"weather_code": 51,
+"weather_source": "open-meteo",
 "streak": 6,
 "province": "北京市"
 },
@@ -50499,6 +50514,11 @@
 "average_speed": 0.996,
 "elevation_gain": 7.0,
 "source": "strava",
+"temperature_min": 21.2,
+"temperature_max": 21.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "streak": 6,
 "province": "北京市"
 },
@@ -57795,5 +57815,37 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 5
+},
+{
+"run_id": 20895836275,
+"name": "🌧️ 晚间跑步",
+"distance": 759.5,
+"moving_time": "0:07:05",
+"type": "Run",
+"start_date": "2026-11-07 14:10:29+00:00",
+"start_date_local": "2026-11-07 22:10:29",
+"location_country": "恒滨路, 保定国家高新区, 竞秀区, 保定市, 河北省, 071000, 中国",
+"summary_polyline": "atplFwfu_UDGJp@GP@d@@FAdABp@CzCF`DF|@C~@B\\Af@G|@DHJBBFHR?HBBBLDDPBf@AJDhABNId@ALCpA?R@p@?\\C`@?FA~@AFFDLCh@LXDDF?E?FYBAJLD?",
+"average_heartrate": 124.7,
+"average_speed": 1.787,
+"elevation_gain": 7.0,
+"source": "strava",
+"temperature_min": 2.9,
+"temperature_max": 2.9,
+"temperature_source": "open-meteo",
+"weather_code": 53,
+"weather_source": "open-meteo",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 187
+}
+],
+"best_efforts_synced_at": "2026-11-07T21:54:52.432632+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 1,
+"province": "河北省"
 }
 ]
