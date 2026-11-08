@@ -49951,6 +49951,11 @@
 "average_speed": 1.404,
 "elevation_gain": 13.0,
 "source": "strava",
+"temperature_min": 21.8,
+"temperature_max": 21.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "streak": 1,
 "province": "北京市"
 },
@@ -49984,6 +49989,11 @@
 "average_speed": 2.846,
 "elevation_gain": 3.0,
 "source": "strava",
+"temperature_min": 14.1,
+"temperature_max": 16.2,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -50016,6 +50026,11 @@
 "average_speed": 1.06,
 "elevation_gain": 986.0,
 "source": "strava",
+"temperature_min": 17.8,
+"temperature_max": 19.5,
+"temperature_source": "open-meteo",
+"weather_code": 51,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -50058,6 +50073,11 @@
 "average_speed": 3.192,
 "elevation_gain": 14.0,
 "source": "strava",
+"temperature_min": 19.2,
+"temperature_max": 19.2,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -50095,6 +50115,11 @@
 "average_speed": 3.106,
 "elevation_gain": 3.0,
 "source": "strava",
+"temperature_min": 16.8,
+"temperature_max": 18.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
