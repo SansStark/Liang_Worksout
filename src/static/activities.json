@@ -49081,6 +49081,11 @@
 "average_speed": 2.89,
 "elevation_gain": 5.0,
 "source": "strava",
+"temperature_min": 13.9,
+"temperature_max": 14.6,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -49117,6 +49122,11 @@
 "average_speed": 3.154,
 "elevation_gain": 3.0,
 "source": "strava",
+"temperature_min": 18.2,
+"temperature_max": 18.2,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -49148,6 +49158,11 @@
 "average_speed": 4.56,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 18.2,
+"temperature_max": 18.2,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -49189,6 +49204,11 @@
 "average_speed": 2.84,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": 17.8,
+"temperature_max": 18.2,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -49220,6 +49240,11 @@
 "average_speed": 3.472,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": 18.8,
+"temperature_max": 18.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
