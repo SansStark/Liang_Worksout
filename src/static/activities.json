@@ -47128,6 +47128,11 @@
 "average_speed": 3.312,
 "elevation_gain": 5.0,
 "source": "strava",
+"temperature_min": 5.8,
+"temperature_max": 8.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -47169,6 +47174,11 @@
 "average_speed": 3.356,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 8.8,
+"temperature_max": 10.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -47232,6 +47242,11 @@
 "average_speed": 3.569,
 "elevation_gain": 214.0,
 "source": "strava",
+"temperature_min": 11.2,
+"temperature_max": 15.4,
+"temperature_source": "open-meteo",
+"weather_code": 51,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -47278,6 +47293,11 @@
 "average_speed": 0.915,
 "elevation_gain": 55.0,
 "source": "strava",
+"temperature_min": 8.6,
+"temperature_max": 9.5,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "streak": 1,
 "province": "重庆市"
 },
@@ -47295,6 +47315,11 @@
 "average_speed": 3.473,
 "elevation_gain": 9.0,
 "source": "strava",
+"temperature_min": 10.2,
+"temperature_max": 10.2,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -58512,7 +58537,7 @@
 },
 {
 "run_id": 20972168943,
-"name": "重量训练（夜间）",
+"name": "工位小练with大佬",
 "distance": 0.0,
 "moving_time": "0:13:49",
 "type": "Workout",
@@ -58528,7 +58553,7 @@
 },
 {
 "run_id": 20982149301,
-"name": "重量训练（晚上）",
+"name": "第8️⃣8️⃣天丨跑步力量训练with杰",
 "distance": 0.0,
 "moving_time": "0:49:04",
 "type": "Workout",
@@ -58563,5 +58588,21 @@
 "weather_source": "open-meteo",
 "streak": 7,
 "province": "北京市"
+},
+{
+"run_id": 21007218142,
+"name": "第8️⃣9️⃣天丨练肩with杰、晨➕脚踝康复训练",
+"distance": 0.0,
+"moving_time": "0:57:51",
+"type": "Workout",
+"start_date": "2026-11-16 10:05:41+00:00",
+"start_date_local": "2026-11-16 18:05:41",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 95.5,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 8
 }
 ]
