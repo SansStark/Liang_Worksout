@@ -47336,6 +47336,11 @@
 "average_speed": 3.022,
 "elevation_gain": 11.0,
 "source": "strava",
+"temperature_min": 13.3,
+"temperature_max": 14.4,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -47377,6 +47382,11 @@
 "average_speed": 1.017,
 "elevation_gain": 70.0,
 "source": "strava",
+"temperature_min": 20.4,
+"temperature_max": 20.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "streak": 4,
 "province": "重庆市"
 },
@@ -47394,6 +47404,11 @@
 "average_speed": 5.313,
 "elevation_gain": 375.0,
 "source": "strava",
+"temperature_min": 12.5,
+"temperature_max": 14.6,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "device_watts": false,
 "power_efforts": [],
 "power_efforts_synced_at": "2026-10-31T18:48:33.099965+00:00",
@@ -47414,6 +47429,11 @@
 "average_speed": 3.035,
 "elevation_gain": 76.0,
 "source": "strava",
+"temperature_min": 25.4,
+"temperature_max": 26.5,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -47455,6 +47475,11 @@
 "average_speed": 2.876,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 26.4,
+"temperature_max": 26.4,
+"temperature_source": "open-meteo",
+"weather_code": 1,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
