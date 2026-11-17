@@ -46746,6 +46746,11 @@
 "average_speed": 3.168,
 "elevation_gain": 7.0,
 "source": "strava",
+"temperature_min": -10.5,
+"temperature_max": -10.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46777,6 +46782,11 @@
 "average_speed": 3.756,
 "elevation_gain": 41.0,
 "source": "strava",
+"temperature_min": -10.5,
+"temperature_max": -5.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46823,6 +46833,11 @@
 "average_speed": 3.031,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": -5.5,
+"temperature_max": -5.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46854,6 +46869,11 @@
 "average_speed": 3.032,
 "elevation_gain": 6.0,
 "source": "strava",
+"temperature_min": 0.0,
+"temperature_max": 0.3,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -58629,5 +58649,63 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 8
+},
+{
+"run_id": 21018288244,
+"name": "康复训练Day9️⃣丨with覃、聶",
+"distance": 6204.5,
+"moving_time": "0:45:52",
+"type": "Run",
+"start_date": "2026-11-17 07:35:46+00:00",
+"start_date_local": "2026-11-17 15:35:46",
+"location_country": "北京航空航天大学（沙河校区）, 9, 高教园南三街, 沙河镇, 昌平区, 北京市, 102206, 中国",
+"summary_polyline": "cnatFssrdUI`AVWLGZGp@CtBUh@WdA_@LIH?FPV|A^bBTnAVhA\\lBDHJJJDT?h@Ur@Qj@[X]j@_@h@o@Pa@Tu@P{@Hq@Fe@?o@GsABILUjAo@XSFI?Ke@wCEk@GKMiAQq@}AwJQo@QkA_@uAW{AKWYyBK]]uBKUMII?QJiBd@a@T{@VsCbAOBSJGNAHNnAETIJe@PaAPm@NwB~@e@PK@]LSNUFOHyAh@o@JSNCP@TXnCNp@PtAHZR|ANt@LrAFPFf@J|BB|CFfAFZHt@f@~BL^\\x@RTFNd@n@l@n@dAp@RJb@FNAVDL?DI@KAk@M}@IOMm@Gg@YiAQuAISEa@AUFIXGZOZIxAg@tA]LHJ\\RvAf@nBBVFPFf@n@`DFJND~@Gv@Wf@YtAmAZc@LY^qARqADoAAe@?a@B_@FOHKVKRMj@UFEHQ@SCUo@uDC[YsA[yB[gBU}AYuAOg@UsA_@}ASkAGSOcA]yAUgBIUMMIAs@TwAj@WDqBv@eAZy@XGHCPPnACNONc@PUBo@Ta@Hg@RQLUHe@ViATa@Te@L}@h@k@Rc@FQPAZLv@Bl@ZtBFTDd@v@|EPvAHf@?f@Ft@?\\Dt@Ap@DnAXzBRz@ZhALZJJXRP\\n@z@v@p@JBbAd@\\J\\DDGDYDIIg@Sg@WoAIy@I]?QI[OcAAS",
+"average_heartrate": 126.6,
+"average_speed": 2.255,
+"elevation_gain": 13.0,
+"source": "strava",
+"temperature_min": 7.5,
+"temperature_max": 7.5,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 129
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 382
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 2179
+}
+],
+"best_efforts_synced_at": "2026-11-17T20:58:58.060592+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 9,
+"province": "北京市"
+},
+{
+"run_id": 21019761281,
+"name": "第9️⃣0️⃣天丨练胸with杰、晨➕脚踝康复训练",
+"distance": 0.0,
+"moving_time": "1:06:57",
+"type": "Workout",
+"start_date": "2026-11-17 10:03:30+00:00",
+"start_date_local": "2026-11-17 18:03:30",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 100.9,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 9
 }
 ]
