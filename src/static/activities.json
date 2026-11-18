@@ -46313,6 +46313,11 @@
 "average_speed": 2.695,
 "elevation_gain": 4.0,
 "source": "strava",
+"temperature_min": -0.7,
+"temperature_max": 0.2,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46349,6 +46354,11 @@
 "average_speed": 3.517,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": -0.5,
+"temperature_max": -0.1,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46406,6 +46416,11 @@
 "average_speed": 3.189,
 "elevation_gain": 63.0,
 "source": "strava",
+"temperature_min": -4.8,
+"temperature_max": -1.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46452,6 +46467,11 @@
 "average_speed": 2.607,
 "elevation_gain": 3.0,
 "source": "strava",
+"temperature_min": 1.0,
+"temperature_max": 1.0,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46499,6 +46519,11 @@
 "average_speed": 3.504,
 "elevation_gain": 5.0,
 "source": "strava",
+"temperature_min": 3.4,
+"temperature_max": 4.9,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -58732,5 +58757,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 9
+},
+{
+"run_id": 21034058169,
+"name": "第9️⃣1️⃣天丨练肩with石主将",
+"distance": 0.0,
+"moving_time": "1:16:42",
+"type": "Workout",
+"start_date": "2026-11-18 11:01:03+00:00",
+"start_date_local": "2026-11-18 19:01:03",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 95.2,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 10
 }
 ]
