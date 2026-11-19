@@ -45911,6 +45911,11 @@
 "average_speed": 1.586,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": 7.8,
+"temperature_max": 7.8,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "streak": 29,
 "province": "重庆市"
 },
@@ -45928,6 +45933,11 @@
 "average_speed": 4.158,
 "elevation_gain": 117.0,
 "source": "strava",
+"temperature_min": 7.7,
+"temperature_max": 12.4,
+"temperature_source": "open-meteo",
+"weather_code": 3,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -45979,6 +45989,11 @@
 "average_speed": 2.955,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": -6.5,
+"temperature_max": -5.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46020,6 +46035,11 @@
 "average_speed": 2.868,
 "elevation_gain": 48.0,
 "source": "strava",
+"temperature_min": -4.8,
+"temperature_max": -2.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -46061,6 +46081,11 @@
 "average_speed": 2.817,
 "elevation_gain": 10.0,
 "source": "strava",
+"temperature_min": 3.4,
+"temperature_max": 4.1,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -58798,5 +58823,21 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 10
+},
+{
+"run_id": 21045343315,
+"name": "重量训练（晚上）",
+"distance": 0.0,
+"moving_time": "0:35:17",
+"type": "Workout",
+"start_date": "2026-11-19 10:21:36+00:00",
+"start_date_local": "2026-11-19 18:21:36",
+"location_country": null,
+"summary_polyline": "",
+"average_heartrate": 90.0,
+"average_speed": 0.0,
+"elevation_gain": 0.0,
+"source": "strava",
+"streak": 11
 }
 ]
