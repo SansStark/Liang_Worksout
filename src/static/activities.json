@@ -45745,6 +45745,11 @@
 "average_speed": 3.437,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": -2.9,
+"temperature_max": -2.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -45781,6 +45786,11 @@
 "average_speed": 3.596,
 "elevation_gain": 0.0,
 "source": "strava",
+"temperature_min": -3.5,
+"temperature_max": -2.9,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -45822,6 +45832,11 @@
 "average_speed": 3.038,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": -2.3,
+"temperature_max": -2.3,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -45858,6 +45873,11 @@
 "average_speed": 3.104,
 "elevation_gain": 13.0,
 "source": "strava",
+"temperature_min": 2.9,
+"temperature_max": 3.6,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -45894,6 +45914,11 @@
 "average_speed": 1.207,
 "elevation_gain": 68.4,
 "source": "strava",
+"temperature_min": 13.7,
+"temperature_max": 14.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "streak": 28,
 "province": "重庆市"
 },
@@ -58826,7 +58851,7 @@
 },
 {
 "run_id": 21045343315,
-"name": "重量训练（晚上）",
+"name": "第9️⃣2️⃣天丨跑步力量训练with杰、晨",
 "distance": 0.0,
 "moving_time": "0:35:17",
 "type": "Workout",
