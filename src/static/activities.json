@@ -42809,6 +42809,11 @@
 "average_speed": 4.769,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": 18.2,
+"temperature_max": 18.2,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -42840,6 +42845,11 @@
 "average_speed": 3.447,
 "elevation_gain": 9.0,
 "source": "strava",
+"temperature_min": 6.5,
+"temperature_max": 6.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -42871,6 +42881,11 @@
 "average_speed": 4.546,
 "elevation_gain": 1.0,
 "source": "strava",
+"temperature_min": 5.8,
+"temperature_max": 6.5,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -42907,6 +42922,11 @@
 "average_speed": 3.84,
 "elevation_gain": 2.0,
 "source": "strava",
+"temperature_min": 5.1,
+"temperature_max": 5.8,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
 "best_efforts": [
 {
 "name": "400m",
@@ -59326,5 +59346,47 @@
 "elevation_gain": 0.0,
 "source": "strava",
 "streak": 1
+},
+{
+"run_id": 21147915419,
+"name": "这不起都起了",
+"distance": 8027.8,
+"moving_time": "0:41:55",
+"type": "Run",
+"start_date": "2026-11-27 22:41:13+00:00",
+"start_date_local": "2026-11-28 06:41:13",
+"location_country": "校训石, 9, 高教园南三街, 沙河镇, 昌平区, 北京市, 102206, 中国",
+"summary_polyline": "clatFkosdUy@]@C?DDBHAFEDGJAJED@\\a@HYK_Aa@cB?MFKHEvBm@JKDI@YSgABQFI^SxBo@nBs@XGH?FH?VDFd@EZDRJV\\HVDn@If@KZ]ZKDw@Jk@ACHFCCCQ?w@HUCWMQQO[Gs@Bc@HYTWVQZIdAC`AIX?H@NDVRPd@D`@Ep@K^YZSHKH@?EEQ?yBP[AOCUKSYMc@Eg@Fi@Tc@LIVKPC~CSTBRJRVJ^Dl@CXK`@SXGF[JcDR]EOKSSKSIa@Ac@Fa@HQRYVMPE`DS\\FNHLNN\\Fd@?f@ETO^YT[J]Bc@@mAJ_@?[QWWOc@Ee@De@FSPWXSNG\\GpCONDZPTb@FTBf@C^Qh@ML[Ny@Je@@UBY?a@DQC]QU[Me@AW@a@FURa@NKb@OlCQ^?PDXVP^Ff@Af@Kd@KPYTSDS@a@FwBHa@MOMQ[Kg@AWFi@Ra@VQb@Q~@CrAKV@VJNLP^Hf@?b@Mj@IPQNIFi@JwCNQE]SS_@Ke@AYBa@Pa@XYPI^G|AKj@CR@PDXVR`@Ff@Af@ETKTWX]LQ?WB_AD_AHOCKEMIMOM[Kc@AS@SJc@PYXS\\IdAIdAEZ?ZLTVN`@D\\?^I`@S\\WTKD[DqBHUD[CKCYWKMM[Ee@Bg@To@LKXK\\IzAG`@E\\?VHVVP\\Fb@?d@I`@S\\MJYJK@q@BkBNOCUKWWO_@Ge@?UHc@R]VSTIl@GjBMZ@NFVRP\\Hb@?b@Ib@O\\WT_@HgADcAJ[?[MUWMYIi@?]Ha@P[VQf@Mj@G~AIP@NDVPPXL`@@`@Cb@M^UVYLu@JO?iAFg@?YIUWKQKi@Ag@DSN_@VWVKJAtCQZ@ZLPTL^Dd@Cb@Ib@GJUTKD{ANm@@_@D[AWKWUSi@Ee@B_@Ja@LOTQZKv@CdBO\\DXPT\\FTBh@Ed@I\\GJOJ]N_AJQ?}@F]?UEYQOUM_@Ea@?OLo@PWXOf@KtBMf@?XLRPTl@Bb@?LOn@QXWPgAN[?iAF[CWK[e@Kc@C]Fg@JYb@]h@Id@CfBO\\DTNLLLXDRBf@ANCRKZWXYNw@Bk@Fu@@E@CHFBz@MP?XIr@K`@SF@?BGF_@DIF",
+"average_heartrate": 154.4,
+"average_speed": 3.192,
+"elevation_gain": 6.0,
+"source": "strava",
+"temperature_min": 0.3,
+"temperature_max": 0.6,
+"temperature_source": "open-meteo",
+"weather_code": 0,
+"weather_source": "open-meteo",
+"best_efforts": [
+{
+"name": "400m",
+"distance": 400.0,
+"elapsed_time": 113
+},
+{
+"name": "1K",
+"distance": 1000.0,
+"elapsed_time": 285
+},
+{
+"name": "5K",
+"distance": 5000.0,
+"elapsed_time": 1512
+}
+],
+"best_efforts_synced_at": "2026-11-28T07:55:08.182775+00:00",
+"best_efforts_version": 2,
+"device_watts": true,
+"streak": 2,
+"province": "北京市"
 }
 ]
